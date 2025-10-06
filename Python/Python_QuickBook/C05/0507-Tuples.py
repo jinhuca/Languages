@@ -1,0 +1,8 @@
+x = ('a', 'b', 'c')
+print(x[2])
+print(x[1:])
+print(len(x))
+print(max(x))
+print(min(x))
+print(5 in x)
+print(5 not in x)

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="1-HOFs.fsx" />
+    <None Include="2-Pipelines.fsx" />
+    <None Include="3-DotNetCollections.fsx" />
+    <None Include="4-FSCollections.fsx" />
+    <None Include="5-Aggregations.fsx" />
+    <Compile Include="C07Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+</Project>

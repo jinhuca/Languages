@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="1-PatternMatching.fsx" />
+    <None Include="2-AdvancedPatternMatching.fsx" />
+    <None Include="3-DiscriminatedUnions.fsx" />
+    <Compile Include="C08Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+</Project>

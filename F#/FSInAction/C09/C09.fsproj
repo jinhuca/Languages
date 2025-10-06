@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="1-Options.fsx" />
+    <None Include="2-OptionMatching.fsx" />
+    <None Include="3-OptionMap.fsx" />
+    <None Include="4-OptionBind.fsx" />
+    <None Include="5-Interop.fsx" />
+    <Compile Include="C09Program.fs" />
+  </ItemGroup>
+
+</Project>

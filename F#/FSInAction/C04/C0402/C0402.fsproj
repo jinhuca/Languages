@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="Listing0403.fs" />
+    <Compile Include="Listing0405.fs" />
+    <Compile Include="Listing0406.fs" />
+    <Compile Include="Listing0407.fs" />
+    <Compile Include="C04Program.fs" />
+  </ItemGroup>
+
+</Project>

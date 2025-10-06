@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="1-Functions.fs" />
+    <None Include="2-Namespaces.fs" />
+    <None Include="3-Modules.fs" />
+    <Compile Include="C06Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup />
+
+</Project>

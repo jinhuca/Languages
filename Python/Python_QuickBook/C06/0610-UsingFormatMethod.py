@@ -1,0 +1,1 @@
+"%s is the %s of %s" % ("Ambrosia", "food", "the gods")
