@@ -1,0 +1,25 @@
+// C0827_Fields.cpp
+import std;
+
+struct PPN {
+  unsigned int PFN : 22;      // Page Frame Number
+  int : 3;                    // unused
+  unsigned int CCA : 3;       // Cache Coherency Algorithm
+  bool nonreachable : 1;
+  bool dirty : 1;
+  bool valid : 1;
+  bool global : 1;
+};
+
+void part_of_VM_system(PPN* p) {
+  // ...
+  if(p->dirty) {    // contents changed
+    // ... copy to disk
+    p->dirty = 0;
+  }
+}
+
+int main() {
+  PPN* p {};
+  part_of_VM_system(p);
+}

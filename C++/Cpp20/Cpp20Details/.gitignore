@@ -1,0 +1,62 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+*.vsidx
+/C03/P011/x64/Debug
+/C03/.vs/C03/v17
+/.vs
+/C03/x64/Debug
+/C03/P01BigFour/P011Concept/x64/Debug
+/C03/P01BigFour/P012Module/x64/Debug
+/C03/P01BigFour/P013RangeLibrary/x64/Debug
+*.user
+*.filters
+/C03/P01BigFour/P014Coroutine/x64/Debug
+/C03/P02Core/P017/x64/Debug
+/C03/P02Core/P018/x64/Debug
+/C03/P02Core/P019/x64/Debug
+/C03/P02Core/P022/x64/Debug
+/C03/P02Core/P023/x64/Debug
+/C03/P02Core/P024/x64/Debug
+*.ifc
+/C03/P03STL/P025/x64/Debug
+/C03/P03STL/P028/x64/Debug
+/C04/P01Concepts/P042/x64/Debug
+/C04/P01Concepts/P050/x64/Debug
+/C04/P01Concepts/P053/x64/Debug
+/C04/P01Concepts/P054/x64/Debug
+/C04/P01Concepts/P055/x64/Debug
+/C04/P01Concepts/P059/x64/Debug
+/x64/Debug
+/C04/P02Modules/P108/x64/Debug
+/C04/P03ThreeWayComparison/P144/x64/Debug/microsoft/STL
+*.log
