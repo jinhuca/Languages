@@ -41,4 +41,6 @@
 *.dwo
 
 # local folders
+.vs/
 .vscode/
+x64/
