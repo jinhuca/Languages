@@ -9,5 +9,6 @@ Integral auto gcd(Integral auto a, Integral auto b) {
 }
 
 int main() {
-  std::cout << gcd(48, 18) << std::endl; // Outputs: 6
+  std::cout << gcd(48, 18) << std::endl;
+  std::cout << gcd(48u, 8u) << std::endl;
 }
