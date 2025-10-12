@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d254ac15-9f91-449e-b0cd-ec5be67f2be9}</ProjectGuid>
-    <RootNamespace>C030101Concepts</RootNamespace>
+    <ProjectGuid>{95814acb-50ae-4833-8d4a-5f65823c110c}</ProjectGuid>
+    <RootNamespace>C030202DesignatedInitialization</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,8 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C030101_Concepts.cpp" />
-    <ClCompile Include="math_lib.ixx" />
+    <ClCompile Include="C030202_Designated_Initialization.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

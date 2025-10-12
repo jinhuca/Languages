@@ -1,8 +1,8 @@
 // C030101_Concepts.cpp 
 import std;
-import gcd;
+import math_lib;
 
 int main() {
-  std::cout << gcd1(48, 18) << std::endl;
-  std::cout << gcd2(48u, 8u) << std::endl;
+  std::cout << gcd(12, 18) << std::endl;
+  std::cout << lcm(12, 18) << std::endl;
 }
