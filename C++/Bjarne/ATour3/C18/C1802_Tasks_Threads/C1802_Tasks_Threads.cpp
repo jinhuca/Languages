@@ -1,8 +1,8 @@
-// P238.cpp : Tasks and threads
+// C1802_Tasks_Threads.cpp 
 import std;
 
 void f() {
-  std::cout << "function f() executed.\n";
+  std::cout << "function f executed.\n";
 }
 
 struct F {
