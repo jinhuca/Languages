@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{d254ac15-9f91-449e-b0cd-ec5be67f2be9}</ProjectGuid>
-    <RootNamespace>C030101Concepts</RootNamespace>
+    <ProjectGuid>{fbc06faf-5551-40dd-80a9-2f8cb1f4a8e6}</ProjectGuid>
+    <RootNamespace>C150201Smartpointers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -129,8 +129,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C030101_Concepts.cpp" />
-    <ClCompile Include="math_lib.ixx" />
+    <ClCompile Include="C150201_Smart_pointers.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

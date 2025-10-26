@@ -1,5 +1,8 @@
 // C050201_shared_ptr.cpp 
-import std;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <memory>
 
 int main() {
   std::cout << "Hello World!\n";
