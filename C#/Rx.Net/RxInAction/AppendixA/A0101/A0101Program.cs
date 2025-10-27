@@ -12,8 +12,7 @@ WriteLine($"Create a thread in main thread id# = {CurrentThread.ManagedThreadId}
 //ReadLine();
 
 WriteLine($"Queue a work item in thread pool, and wait for its completion.");
-ThreadPool.QueueUserWorkItem(_ =>
-{
+ThreadPool.QueueUserWorkItem(_ => {
   WriteLine($"Start work on thread id# = {CurrentThread.ManagedThreadId} ...");
   Sleep(2000);
   Write($"Long work is done, the result is 43.\n");

@@ -5,17 +5,14 @@ using static System.Console;
 
 namespace C0102.ShoppyExample;
 
-public class Shoppy
-{
-  public void TestShoppy()
-  {
+public class Shoppy {
+  public void TestShoppy() {
     StoreIconExample();
     ConnectivityExample();
   }
 
   [Description("Shows how you can combine multiple observables")]
-  private static void StoreIconExample()
-  {
+  private static void StoreIconExample() {
     const double minIconSize = 20;
     const double maxIconSize = 32;
 
@@ -27,31 +24,29 @@ public class Shoppy
       .SelectMany(store => myLocation, (store, currentLocation) => new { store, currentLocation });
 
     var iconSize = from store in stores.ToObservable()
-      from currentLocation in myLocation
-      let dist = Position.Distance(store.Location, currentLocation)
-      where dist < 5
-      let calcSize = Math.Round((5 / dist) * minIconSize, 0)
-      let sizeOrMax = Math.Round(Math.Min(calcSize, maxIconSize), 0)
-      let sizeOrMin = Math.Round(Math.Max(sizeOrMax, minIconSize), 0)
-      select new
-      {
-        store.Name,
-        StoreX = store.Location.X,
-        StoreY = store.Location.Y,
-        MeX = currentLocation.X,
-        MeY = currentLocation.Y,
-        dist,
-        calcSize,
-        sizeOrMin,
-        sizeOrMax
-      };
+                   from currentLocation in myLocation
+                   let dist = Position.Distance(store.Location, currentLocation)
+                   where dist < 5
+                   let calcSize = Math.Round((5 / dist) * minIconSize, 0)
+                   let sizeOrMax = Math.Round(Math.Min(calcSize, maxIconSize), 0)
+                   let sizeOrMin = Math.Round(Math.Max(sizeOrMax, minIconSize), 0)
+                   select new {
+                     store.Name,
+                     StoreX = store.Location.X,
+                     StoreY = store.Location.Y,
+                     MeX = currentLocation.X,
+                     MeY = currentLocation.Y,
+                     dist,
+                     calcSize,
+                     sizeOrMin,
+                     sizeOrMax
+                   };
 
     iconSize.Subscribe(WriteLine);
   }
 
   [Description("Shows how asynchrnous code execution get be part of the observable pipline")]
-  private void ConnectivityExample()
-  {
+  private void ConnectivityExample() {
     IObservable<Connectivity> myConnectivity = Observable.Empty<Connectivity>();
     IObservable<IEnumerable<Discount>> newDiscounts = myConnectivity
       .Where(connectivity => connectivity == Connectivity.Online)
@@ -61,13 +56,11 @@ public class Shoppy
   }
 
   #region Helper Methods
-  private static IObservable<Position> CreateDummyLocations()
-  {
+  private static IObservable<Position> CreateDummyLocations() {
     return Observable.Range(1, 50).Select(i => new Position { X = i, Y = i * 2 });
   }
 
-  private static Store[] CreateDummyStores()
-  {
+  private static Store[] CreateDummyStores() {
     return new[]
     {
       new Store
@@ -88,8 +81,7 @@ public class Shoppy
     };
   }
 
-  private void RefreshView(IEnumerable<Discount> discounts)
-  {
+  private void RefreshView(IEnumerable<Discount> discounts) {
     throw new NotImplementedException();
   }
 

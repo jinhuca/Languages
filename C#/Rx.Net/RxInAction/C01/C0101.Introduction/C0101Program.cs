@@ -25,8 +25,7 @@ sub1.Subscribe(WriteLine);
 ReadLine();
 
 WriteLine("C - push an exception on observable, and it is unhandled on observer. - crash / terminate the app.");
-var sub2 = Observable.Create<string>(observer =>
-{
+var sub2 = Observable.Create<string>(observer => {
   observer.OnNext("Hello");
   observer.OnError(new Exception());
   return Disposable.Empty;

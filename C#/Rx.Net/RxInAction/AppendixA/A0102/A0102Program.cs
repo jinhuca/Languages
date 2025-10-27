@@ -8,11 +8,13 @@ WriteLine($"The request was sent, status: {requestTask.Status}");
 ReadLine();
 
 var httpClient2_ = new HttpClient();
-httpClient2_
-  .GetAsync("http://ReactiveX.io")
-  .ContinueWith(requestTask =>
-  {
+
+Action<Task<HttpResponseMessage>> continuationAction = static requestTask => {
     WriteLine($"The request was sent, status: {requestTask.Status}");
     WriteLine(requestTask.Result.Headers);
-  });
+};
+
+Task continuationTask = httpClient2_
+  .GetAsync("http://ReactiveX.io")
+  .ContinueWith(continuationAction);
 ReadLine();
