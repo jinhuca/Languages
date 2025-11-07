@@ -5,7 +5,7 @@ using Date = Chrono::Date;
 using Month = Chrono::Month;
 
 Date::Date(int dd, Month mm, int yy)
-  : d { dd }, m { mm }, y { yy } {
+  : d {dd}, m {mm}, y {yy} {
   if(y == 0) y = default_date().year();
   if(m == Month {}) m = default_date().month();
   if(d == 0) d = default_date().day();
@@ -19,42 +19,42 @@ inline int Date::year() const { return y; }
 std::string Date::string_rep() const {
   std::string month = "";
   switch(m) {
-  case Month::jan:
-    month = "January";
-    break;
-  case Month::feb:
-    month = "February";
-    break;
-  case Month::mar:
-    month = "March";
-    break;
-  case Month::apr:
-    month = "April";
-    break;
-  case Month::may:
-    month = "May";
-    break;
-  case Month::jun:
-    month = "June";
-    break;
-  case Month::jul:
-    month = "July";
-    break;
-  case Month::aug:
-    month = "August";
-    break;
-  case Month::sep:
-    month = "September";
-    break;
-  case Month::oct:
-    month = "October";
-    break;
-  case Month::nov:
-    month = "November";
-    break;
-  case Month::dec:
-    month = "December";
-    break;
+    case Month::jan:
+      month = "January";
+      break;
+    case Month::feb:
+      month = "February";
+      break;
+    case Month::mar:
+      month = "March";
+      break;
+    case Month::apr:
+      month = "April";
+      break;
+    case Month::may:
+      month = "May";
+      break;
+    case Month::jun:
+      month = "June";
+      break;
+    case Month::jul:
+      month = "July";
+      break;
+    case Month::aug:
+      month = "August";
+      break;
+    case Month::sep:
+      month = "September";
+      break;
+    case Month::oct:
+      month = "October";
+      break;
+    case Month::nov:
+      month = "November";
+      break;
+    case Month::dec:
+      month = "December";
+      break;
   }
   std::string result = "Year: " + std::to_string(y) + " month: " + month + " day: " + std::to_string(d);
   return result;
@@ -117,7 +117,7 @@ bool Chrono::operator!=(Date a, Date b) {
 }
 
 const Date& Chrono::default_date() {
-  return Date { 1,Month::jan,1969 };
+  return Date {1,Month::jan,1969};
 }
 
 std::ostream& Chrono::operator<<(std::ostream& os, const Date& d) {
@@ -130,6 +130,6 @@ std::istream& Chrono::operator>>(std::istream& is, Date& d) {
   is >> dd >> mm >> yy;
   Month mi;
   mi = static_cast<Month>(mm);
-  d = Date { dd, mi,yy };
+  d = Date {dd, mi,yy};
   return is;
 }

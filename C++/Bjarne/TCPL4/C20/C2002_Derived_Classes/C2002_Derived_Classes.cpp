@@ -20,7 +20,7 @@ struct Manager : Employee {
 };
 
 void f(Manager m1, Employee e1) {
-  std::list<Employee*> elist { &m1, &e1 };
+  std::list<Employee*> elist {&m1, &e1};
 }
 
 void g(Manager mm, Employee ee) {
@@ -33,7 +33,7 @@ void g(Manager mm, Employee ee) {
 }
 
 int main() {
-  Employee e1 { "Jon" };
-  Manager m1 { "Doe" };
+  Employee e1 {"Jon"};
+  Manager m1 {"Doe"};
   f(m1, e1);
 }
