@@ -1,0 +1,9 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C0401_NamespaceStd/C0401_NamespaceStd.vcxproj" Id="5ff50eda-3935-4313-a0f2-31405cfb9d2a" />
+  <Project Path="C0402_HeaderFiles/C0402_HeaderFiles.vcxproj" Id="899f0d04-086b-49af-b0d5-87ba45844203" />
+  <Project Path="C0404_CallableObjects/C0404_CallableObjects.vcxproj" Id="fc6a4749-79a1-4518-bdc0-87f8ca77223b" />
+</Solution>

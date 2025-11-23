@@ -1,0 +1,9 @@
+#pragma once
+#include <iostream>
+
+class MyAnotherClass {
+  public:
+    void anotherFunction() {
+      std::cout << "My Another Class::anotherFunction called!" << std::endl;
+    }
+};

@@ -1,4 +1,4 @@
-// P0054.cpp Callable Objects
+// C0404.cpp - Callable Objects
 import std;
 
 void func(int x, int y) {
@@ -21,8 +21,7 @@ private:
   int m_x, m_y;
 };
 
-int main()
-{
+int main() {
   C c;
   std::shared_ptr<C> sp(new C);
 
