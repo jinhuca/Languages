@@ -3,15 +3,15 @@
   // This can be useful for language interoperability.
   int @class = 123;
   string @namespace = "foo";
-  Console.WriteLine($"{nameof(@class)} = {@class}" );
+  Console.WriteLine($"{nameof(@class)} = {@class}");
   Console.WriteLine($"{nameof(@namespace)} = {@namespace}");
-}
+} 
 {
   // The identifiers below are examples of *contextual* keywords, so we can use them without conflicts.
   int add = 3;
   bool ascending = true;
   int yield = 45;
-}
+} 
 {
   // Statements can span multiple lines, thanks to the semicolon terminator.
   Console.WriteLine

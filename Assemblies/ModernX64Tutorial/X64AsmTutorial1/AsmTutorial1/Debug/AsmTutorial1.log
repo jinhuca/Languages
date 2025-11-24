@@ -1,0 +1,7 @@
+﻿  Assembling asm.asm...
+asm.asm(1): error A2013: .MODEL must precede this directive
+asm.asm(2): error A2034: must be in segment block : SomeFunction
+asm.asm(3): error A2034: must be in segment block
+asm.asm(4): error A2034: must be in segment block
+asm.asm(5): fatal error A1010: unmatched block nesting : SomeFunction
+C:\Program Files\Microsoft Visual Studio\18\Enterprise\MSBuild\Microsoft\VC\v180\BuildCustomizations\masm.targets(70,5): error MSB3721: The command "ml.exe /c /nologo /Zi /Fo"Debug\asm.obj" /W3 /errorReport:prompt  /Taasm.asm" exited with code 1.
