@@ -5,5 +5,6 @@
   </Configurations>
   <Project Path="C0101_ComparisonBeforeCpp20/C0101_ComparisonBeforeCpp20.vcxproj" Id="b2ca1e88-cbf6-4ca6-a99c-2559333035b3" />
   <Project Path="C0102_ComparisonSinceCpp20/C0102_ComparisonSinceCpp20.vcxproj" Id="2ce29aa8-8488-4e5e-96aa-e4fd9737b44d" />
+  <Project Path="C0102_EqualityInCpp20/C0102_EqualityInCpp20.vcxproj" Id="f84366c5-0aab-4108-909e-b2535d648970" />
   <Project Path="C0103_UserDefinedComparison/C0103_UserDefinedComparison.vcxproj" Id="d7594c60-056f-4a0f-a769-836b6041e9cf" />
 </Solution>

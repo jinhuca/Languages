@@ -6,7 +6,6 @@ private:
 public:
   Item() :id(0) {}
   Item(long id) : id(id) {}
-  long getId() const { return id; }
 
   // Comparison operators before C++20
   [[nodiscard]] friend constexpr
