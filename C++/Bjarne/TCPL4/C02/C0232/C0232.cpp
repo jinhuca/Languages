@@ -4,7 +4,7 @@ import std;
 class Vector {
 public:
   Vector(int s) : elem { new double[s] }, sz { s } {}   // construct a Vecotr
-  double& operator[](int i) { return elem[i]; }         // element access: subscribing
+  double& operator[](int i) const { return elem[i]; }         // element access: subscribing
   int size() const { return sz; }   // a "const" suffix means "can be applied to const objects"
 private:
   double* elem;     // pointer to the elements
