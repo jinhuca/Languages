@@ -3,35 +3,29 @@ using System.Reactive.Linq;
 
 namespace C0204.StreamProcess;
 
-internal class C0204Program
-{
-  static void Main(string[] args)
-  {
-    //test();
-    Test2();
+internal class C0204Program {
+  static void Main(string[] args) {
+    test();
+    //Test2();
   }
 
-  static void test()
-  {
+  static void test() {
     IObserver<StockTick> observer = Observer.Create<StockTick>(
-      stock =>
-      {
+      stock => {
         Console.WriteLine($"{stock.Symbol} = {stock.Price}");
       }
     );
 
-    var service = new StockService();
-    //service_.StockObservable.Subscribe(
-    //  stock =>
-    //  {
-    //    Console.WriteLine($"{stock.Symbol} = {stock.Price}");
-    //  });
-    service.Run(observer);
+    var service_ = new StockService();
+    service_.StockObservable.Subscribe(
+      stock => {
+        Console.WriteLine($"{stock.Symbol} = {stock.Price}");
+      });
+    service_.Run(observer);
     Console.ReadLine();
   }
 
-  static void Test2()
-  {
+  static void Test2() {
     const decimal maxChangeRatio = 0.1m;
     var service = new StockService();
 

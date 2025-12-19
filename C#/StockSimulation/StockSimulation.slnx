@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="C01_EventHandling/C01_EventHandling.csproj" />
+  <Project Path="C02_RxHandling/C02_RxHandling.csproj" />
+  <Project Path="C03_RxStreams/C03_RxStreams.csproj" />
+</Solution>

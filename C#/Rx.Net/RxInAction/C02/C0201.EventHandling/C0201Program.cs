@@ -48,8 +48,8 @@ file class C0201Program
 
   private static void AutomaticSimulator(StockTicker? stockTicker)
   {
-    var simulator_ = new StockSimulator(stockTicker);
-    simulator_.Run();
+    var simulator = new StockSimulator(stockTicker);
+    simulator.Run();
   }
 
   private static void ManualSimulator(StockTicker? stockTicker)
