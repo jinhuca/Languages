@@ -5,7 +5,7 @@ class X {
 private:                        // the representation (implementation) is private
   int m;
 public:                         // the interface is public
-  X(int i = 0) :m { i } { }      // a constructor (initialize the data member m)
+  X(int i = 0) :m { i } { }     // a constructor (initialize the data member m)
   int mf(int i) {               // a member function
     int old = m;
     m = i;                      // set a new value
@@ -13,7 +13,7 @@ public:                         // the interface is public
   }
 };
 
-X x { 7 };                    // a variable of type X, initialized to 7
+X x { 7 };                      // a variable of type X, initialized to 7
 
 void user(X var, X* ptr) {
   int x = var.mf(11);
