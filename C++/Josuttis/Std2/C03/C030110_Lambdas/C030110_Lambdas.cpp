@@ -31,6 +31,10 @@ void capture_variables() {
   std::cout << "final y: " << y << '\n';
 }
 
+auto returnLambda() -> std::function<int(int,int)> {
+  return [](int x, int y) { return x * y; };
+}
+
 int main() {
   //lambda_def1();
   //lambda_def2();
@@ -38,4 +42,9 @@ int main() {
   //auto lambda = [](const std::string& s)->int { return s.size(); };
   //std::cout << lambda("hello lambda");
   capture_variables();
+  std::string s = "hello";
+  [&s]() {std::cout << s << '\n'; }();
+
+  auto lf = returnLambda();
+  std::cout << lf(6, 7) << '\n';
 }
