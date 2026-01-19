@@ -1,5 +1,8 @@
 // C030103_Uniform_Init.cpp
-import std;
+#include <vector>
+#include <complex>
+#include <string>
+#include <iostream>
 
 void uniform_init_objects() {
   int i;     // i has undefined value
@@ -26,8 +29,16 @@ void narrow_init() {
   //std::vector<int> v2{ 1,2.3,4.1 };  // ERROR: narrowing
 }
 
+void print(std::initializer_list<int> vals) {
+  for(auto p = vals.begin(); p != vals.end(); ++p) {
+    std::cout << *p << ' ';
+  }
+  std::cout << '\n';
+}
+
 int main() {
   uniform_init_objects();
   uniform_init_collection();
   narrow_init();
+  print({1,2,3,4,5});
 }
