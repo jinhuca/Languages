@@ -10,7 +10,7 @@ std::vector<std::string> create_and_insert() {
   coll.push_back(s + s);              // insert temporary string
   coll.push_back(std::move(s));       // insert string
 
-  return coll;                        // return vector of strings
+  return coll;                        // return vector of strings  
 }
 
 int main() {
