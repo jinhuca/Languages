@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C0301_Ordinary_Class/C0301_Ordinary_Class.vcxproj" />
+</Solution>
