@@ -131,6 +131,9 @@
   <ItemGroup>
     <ClCompile Include="C050103_IO_for_Tuples.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="printtuple.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
