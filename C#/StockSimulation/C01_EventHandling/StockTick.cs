@@ -5,8 +5,8 @@ using System.Text;
 namespace C01_EventHandling;
 
 internal class StockTick {
-  public event EventHandler<Stock> StockPriceChanged = delegate { };
-  public void Notify(Stock e) {
+  public event EventHandler<StockInfo> StockPriceChanged = delegate { };
+  public void Notify(StockInfo e) {
     StockPriceChanged(this, e);
   }
 }

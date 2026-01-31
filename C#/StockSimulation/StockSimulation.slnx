@@ -2,4 +2,5 @@
   <Project Path="C01_EventHandling/C01_EventHandling.csproj" />
   <Project Path="C02_RxHandling/C02_RxHandling.csproj" />
   <Project Path="C03_RxStreams/C03_RxStreams.csproj" />
+  <Project Path="C04_Streams/C04_Streams.csproj" Id="c4789a49-b360-48ba-9917-11e61c7026c2" />
 </Solution>

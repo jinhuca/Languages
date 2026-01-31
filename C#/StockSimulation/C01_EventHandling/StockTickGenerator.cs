@@ -4,12 +4,12 @@ using static System.Console;
 namespace C01_EventHandling;
 
 internal class StockTickGenerator(StockTick? ticker) {
-  private IEnumerable<Stock> _ticks = new[] {
-    new Stock() { Symbol = "MSFT", Price = 53M },
-    new Stock() { Symbol = "INTC", Price = 32M },
-    new Stock() { Symbol = "ORCL", Price = 41M },
-    new Stock() { Symbol = "CSCO", Price = 28M },
-  };
+  private IEnumerable<StockInfo> _ticks = [
+    new() { Symbol = "MSFT", Price = 53M },
+    new() { Symbol = "INTC", Price = 32M },
+    new() { Symbol = "ORCL", Price = 41M },
+    new() { Symbol = "CSCO", Price = 28M }
+  ];
 
   private int _itemToDrasticUpdate;
 
@@ -29,7 +29,7 @@ internal class StockTickGenerator(StockTick? ticker) {
     _ticks = _ticks
       .Select((tick, i) => {
         var changePercentage_ = _itemToDrasticUpdate == i ? 1.11M : .96M;
-        return new Stock
+        return new StockInfo
         {
           Symbol = tick.Symbol,
           Price = tick.Price * changePercentage_
@@ -42,7 +42,7 @@ internal class StockTickGenerator(StockTick? ticker) {
   }
 
   private void PrintStocks() {
-    WriteLine("New Stock Series:\t");
+    WriteLine("New StockInfo Series:\t");
     foreach (var tick_ in _ticks) {
       WriteLine($"\t{tick_.Symbol}: {tick_.Price:F2}");
     }

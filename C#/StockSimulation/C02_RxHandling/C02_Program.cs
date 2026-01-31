@@ -1,7 +1,7 @@
 ﻿using C02_RxHandling;
 using static System.Console;
 
-public class C02Program {
+public class C02_Program {
   private static StockTick? _stockTick;
 
   public static void Main() {
