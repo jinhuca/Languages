@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C0401_Motivation/C0401_Motivation.vcxproj" />
+  <Project Path="C04_Introduction/C04_Introduction.vcxproj" />
+</Solution>

@@ -7,6 +7,7 @@ std::string returnStringByValue() {
 
 void f() {
   std::string s { "hello" };
+
   //std::string&& r1 { s };                     // Error
   std::string&& r1 { returnStringByValue() };   // OK
   std::string&& r2 { std::move(s) };            // OK

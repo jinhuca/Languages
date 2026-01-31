@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C0201_if_initialization/C0201_if_initialization.vcxproj" />
+</Solution>

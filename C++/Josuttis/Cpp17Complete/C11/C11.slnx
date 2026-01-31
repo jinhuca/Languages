@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C1101_Motivation/C1101.vcxproj" Id="af857ef3-197f-420e-a248-2780e5d963d9" />
+  <Project Path="C1102_Usage/C1102.vcxproj" Id="70f30d69-3094-4d6a-8ded-9387a07c0d28" />
+  <Project Path="C1103_EmptyPacks/C1103_EmptyPacks.vcxproj" Id="43fd6b97-9f0f-41fa-809f-bdab656318e4" />
+  <Project Path="C11_Introduction/C11.vcxproj" Id="0d12babf-8a3b-4a85-b1e2-f34034fb653d" />
+</Solution>

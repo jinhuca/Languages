@@ -6,6 +6,11 @@ struct MyStruct {
   std::string s;
 };
 
+void bind1() {
+  MyStruct ms;
+  auto [u, v] = ms;
+}
+
 MyStruct ms { 101, "Hello" };
 
 auto [u, v] = ms;
@@ -18,7 +23,7 @@ MyStruct getStruct() {
 
 auto [id, val] = getStruct();
 
-void bind() {
+void bind2() {
   std::cout << u << ", " << v << '\n';
   std::cout << u1 << ", " << v1 << '\n';
   std::cout << u2 << ", " << v2 << '\n';
@@ -39,5 +44,6 @@ void iterate_map() {
 }
 
 int main() {
+  bind1();
   iterate_map();
 }
