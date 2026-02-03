@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C1104_for_each/C1104_for_each.vcxproj" />
+  <Project Path="C110603_transform/C110603_transform.vcxproj" />
+</Solution>
