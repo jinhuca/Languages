@@ -2,6 +2,7 @@
 #include <iostream>
 #include <string>
 #include <deque>
+#include <set>
 #include <algorithm>
 
 class Person {
@@ -17,6 +18,10 @@ public:
   std::string firstname() const { return fn; }
   std::string lastname() const { return ln; }
   // ...
+  bool operator<(const Person& other) const {
+    return ln < other.ln ||
+      (ln == other.ln && fn < other.fn);
+  }
 };
 
 std::ostream& operator<<(std::ostream& os, const Person& p) {
@@ -36,7 +41,7 @@ bool personSortCriterion(const Person& p1, const Person& p2) {
       p1.firstname() < p2.firstname());
 }
 
-int main() {
+void sort_people() {
   // create some persons
   Person p1("nicolai", "josuttis");
   Person p2("ulli", "josuttis");
@@ -72,4 +77,20 @@ int main() {
   for (pos = coll.begin(); pos != coll.end(); ++pos) {
     std::cout << *pos << '\n';
   }
+}
+
+void create_set_of_persons() {
+  std::set<Person> persons;
+  persons.insert(Person("nicolai", "josuttis"));
+  persons.insert(Person("ulli", "josuttis"));
+  persons.insert(Person("anica", "josuttis"));
+  persons.insert(Person("lucas", "josuttis"));
+  for(const auto& person : persons) {
+    std::cout << person << '\n';
+  }
+}
+
+int main() {
+  //sort_people();
+  create_set_of_persons();
 }
