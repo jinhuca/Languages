@@ -3,14 +3,12 @@
 #include <memory>
 #include <iostream>
 
-struct empty_stack :std::exception
-{
+struct empty_stack :std::exception {
   const char* what() const throw();
 };
 
 template<typename T>
-class threadsafe_stack
-{
+class threadsafe_stack {
 public:
   threadsafe_stack();
   threadsafe_stack(const threadsafe_stack&);
@@ -22,6 +20,5 @@ public:
   bool empty() const;
 };
 
-int main()
-{
+int main() {
 }

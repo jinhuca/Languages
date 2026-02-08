@@ -3,11 +3,11 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="C1104_for_each/C1104_for_each.vcxproj" />
-  <Project Path="C110501_counting/C110501_counting.vcxproj" />
-  <Project Path="C110502_min_max/C110502_min_max.vcxproj" />
-  <Project Path="C110503_search_elements/C110503_search_elements.vcxproj" />
-  <Project Path="C110603_transform/C110603_transform.vcxproj" />
-  <Project Path="C110603_transform2/C110603_transform2.vcxproj" />
-  <Project Path="C110604_swap_elements/C110604_swap_elements.vcxproj" />
+  <Project Path="C1104_for_each/C1104_for_each.vcxproj" Id="71da9a6d-576e-44f0-9a92-84fd7388245d" />
+  <Project Path="C110501_counting/C110501_counting.vcxproj" Id="b1ecbbd0-663d-409e-ab6c-f95d03344e1e" />
+  <Project Path="C110502_min_max/C110502_min_max.vcxproj" Id="f94b011a-983b-4d11-b623-cc4061a55af8" />
+  <Project Path="C110503_search_elements/C110503_search_elements.vcxproj" Id="f9e94493-26ef-44ee-b642-360162dfde32" />
+  <Project Path="C110603_transform/C110603_transform.vcxproj" Id="bdeba50f-9fe0-41b5-8bc2-bacfb6c9c188" />
+  <Project Path="C110603_transform2/C110603_transform2.vcxproj" Id="d2016a3f-aaf7-4c9f-a66a-67e5a231efa9" />
+  <Project Path="C110604_swap_elements/C110604_swap_elements.vcxproj" Id="36451f25-fd0f-4b1e-a1c4-b9acc5607466" />
 </Solution>

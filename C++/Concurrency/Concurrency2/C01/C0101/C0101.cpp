@@ -2,13 +2,11 @@
 #include <iostream>
 #include <thread>
 
-void hello()
-{
+void hello() {
   std::cout << "Hello Concurrent World!\n";
 }
 
-int main()
-{
+int main() {
   std::thread t(hello);
   std::cout << "Hello from main!\n";
   t.join();

@@ -4,8 +4,7 @@
 #include <iostream>
 
 template<typename T, typename Container = std::deque<T> >
-class stack
-{
+class stack {
 public:
   explicit stack(const Container&);
   explicit stack(Container && = Container());
@@ -24,7 +23,6 @@ public:
   void swap(stack&&);
 };
 
-int main()
-{
+int main() {
   std::cout << "Hello World!\n";
 }
