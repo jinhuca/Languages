@@ -5,8 +5,6 @@ export class Value {
 private:
   long id;
 public:
-  constexpr Value(long i) noexcept : id(i) {
-  }
-  // enable use of all equality and relational operators:
+  constexpr Value(long i) noexcept : id(i) {}
   auto operator<=>(const Value& rhs) const = default;
 };
