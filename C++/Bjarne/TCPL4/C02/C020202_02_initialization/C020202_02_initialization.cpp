@@ -17,8 +17,8 @@ void initialize_variables() {
   std::vector<int> v { 1, 2, 3, 4, 5 };   // direct list initialization of a vector
 
   int i1 = 7.2;       // copy initialization with narrowing conversion (double to int), allowed but may lose information
-  int i2 { 7.2 };     // direct list initialization with narrowing conversion, error: cannot convert double to int without loss of information
-  int i3 = { 7.2 };   // copy list initialization with narrowing conversion, error: cannot convert double to int without loss of information
+  //int i2 { 7.2 };     // direct list initialization with narrowing conversion, error: cannot convert double to int without loss of information
+  //int i3 = { 7.2 };   // copy list initialization with narrowing conversion, error: cannot convert double to int without loss of information
 }
 
 int main() {

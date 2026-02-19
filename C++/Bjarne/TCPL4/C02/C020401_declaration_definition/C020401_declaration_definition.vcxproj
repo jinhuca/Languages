@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{8cdbdca1-5c48-43ef-9de1-8f82aa049e8a}</ProjectGuid>
-    <RootNamespace>C02020202initialization</RootNamespace>
+    <ProjectGuid>{f11f778b-8d6e-445f-bd36-9b6dda789f28}</ProjectGuid>
+    <RootNamespace>C020401declarationdefinition</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -128,7 +128,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C020202_02_initialization.cpp" />
+    <ClCompile Include="C020401_declaration_definition.cpp" />
+    <ClCompile Include="Vector.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Vector.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
