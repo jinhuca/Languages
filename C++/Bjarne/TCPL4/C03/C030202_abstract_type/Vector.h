@@ -1,13 +1,12 @@
-// C03213.cpp : initializing containers
+#pragma once
 #include <iostream>
-#include <initializer_list>
 
 class Vector {
 private:
   double* elem;
   int sz;
 public:
-  Vector() : sz { 1 }, elem { new double[1] } {}
+  Vector() : sz { 1 }, elem { new double[1] } { }
 
   Vector(int s) :sz { s }, elem { new double[s] } {
     for (int i = 0; i != s; ++i) elem[i] = 0;
@@ -25,6 +24,7 @@ public:
   }
 
   void push_back(double d) {
+
   }
 
   double& operator[](int i) {
@@ -34,15 +34,3 @@ public:
 
   int size() const { return sz; }
 };
-
-Vector read(std::istream& is) {
-  Vector v;
-  for (double d; is >> d;)
-    v.push_back(d);
-  return v;
-}
-
-int main() {
-  Vector v1 { 1,2,3,4,5 };
-  Vector v2 { 1.23,3.45,5.67 };
-}

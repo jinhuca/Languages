@@ -13,6 +13,8 @@ void f() {
   auto c5 = c1 * c2;
   auto c6 = c1 / c2;
   
+  std::cout << (c1 == c2);
+
   std::cout << "+: " << "{ " << c3.real() << ", " << c3.imag() << " }\n";
   std::cout << "-: " << "{ " << c4.real() << ", " << c4.imag() << " }\n";
   std::cout << "*: " << "{ " << c5.real() << ", " << c5.imag() << " }\n";

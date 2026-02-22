@@ -1,11 +1,11 @@
 #pragma once
 
 class complex {
-  double re, im;
+  double re, im;    // representation: two doubles
 public:
-  complex(double r, double i) :re { r }, im { i } {}
-  complex(double r) :re { r }, im { 0 } {}
-  complex() :re { 0 }, im { 0 } {}
+  complex(double r, double i) :re { r }, im { i } {}  // construct complex from two scalars
+  complex(double r) :re { r }, im { 0 } {}            // construct complex from one scalar
+  complex() :re { 0 }, im { 0 } {}                    // default complex: {0,0}
 
   double real() const { return re; }
   void real(double r) { re = r; }
@@ -24,15 +24,6 @@ public:
     return *this;
   }
 
-  complex& operator*=(complex);
-  complex& operator/=(complex);
-
-  //complex& operator+(complex);
-  //complex& operator-(complex);
-  //complex& operator*(complex);
-  //complex& operator/(complex);
-
-  //bool operator==(const complex&) const;
-  //bool operator!=(const complex&) const;
-
+  complex& operator*=(complex);   // defined out-of-class somewhere
+  complex& operator/=(complex);   // defined out-of-class somewhere
 };
