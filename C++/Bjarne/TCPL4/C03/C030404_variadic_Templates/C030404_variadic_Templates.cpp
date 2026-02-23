@@ -1,7 +1,7 @@
-// C0344_VariadicTemplates.cpp
+// C0344_variadic_templates.cpp
 import std;
 
-void f() {}
+void f() { }
 
 template<typename T>
 void g(T t) {

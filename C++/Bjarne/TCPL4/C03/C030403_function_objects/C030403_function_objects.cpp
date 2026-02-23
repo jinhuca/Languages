@@ -34,6 +34,25 @@ void g(const std::list<std::string>& lst, const std::string s) {
   std::cout << count(lst, [&](const std::string& a) {return a < s; }) << '\n';
 }
 
+template<typename C, typename Oper>
+void for_all(C& c, Oper op) {
+  for (auto& x : c)
+    op(*x);
+}
+
+void user() {
+  std::vector<std::unique_ptr<int>> v;
+  v.push_back(std::make_unique<int>(1));
+  v.push_back(std::make_unique<int>(2));
+  for (const auto& x : v)
+    std::cout << *x << '\n';
+
+  for_all(v, [](int& x) { x *= 10; });
+  for (const auto& x : v)
+    std::cout << *x << '\n';
+}
+
 int main() {
   fct(1, "Bjarne");
+  user();
 }
