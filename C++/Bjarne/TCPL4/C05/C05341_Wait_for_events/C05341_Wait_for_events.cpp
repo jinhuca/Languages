@@ -24,7 +24,7 @@ void consumer() {
 
     // release lck and wait until not empty
     // re-acquire lck upon wakeup
-    mcond.wait(lck, [this] { return !mqueue.empty(); });
+    mcond.wait(lck, [] { return !mqueue.empty(); });
 
     auto m = mqueue.front();    // get the message
     mqueue.pop();
