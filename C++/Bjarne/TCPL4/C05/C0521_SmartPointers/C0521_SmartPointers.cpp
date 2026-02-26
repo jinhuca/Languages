@@ -35,6 +35,7 @@ void f(std::shared_ptr<std::fstream>) {}
 void g(std::shared_ptr<std::fstream>) {}
 
 void user(const std::string& name, std::ios_base::openmode mode) {
+  std::unique_ptr<int> p = std::make_unique<int>(42);  // allocate an int with value 42 and give its pointer to unique_ptr p
   std::shared_ptr<std::fstream> fp { new std::fstream(name, mode) };
   if (!*fp) throw std::exception();   // make sure the file was properly opened.
 
@@ -44,5 +45,5 @@ void user(const std::string& name, std::ios_base::openmode mode) {
 }
 
 int main() {
-  std::cout << "Hello World!\n";
+  user("data.txt", std::ios::in);
 }
