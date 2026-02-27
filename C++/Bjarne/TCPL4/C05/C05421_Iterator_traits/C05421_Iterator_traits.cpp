@@ -16,6 +16,12 @@ void sort_helper(For beg, For end, std::forward_iterator_tag) {
   copy(v.begin(), v.end(), beg);
 }
 
+template<typename C>
+void sort(C& c) {
+  using Iter = Iterator_type<C>;
+  sort_helper(c.begin(), c.end(), typename std::iterator_traits<Iter>::iterator_category {});
+}
+
 int main() {
   std::cout << "Hello World!\n";
 }

@@ -1,12 +1,19 @@
 // C05341_Wait_for_events.cpp 
-import std;
+#include <chrono>
+#include <thread>
+#include <iostream>
+#include <queue>
+#include <condition_variable>
+#include <mutex>
+
 using namespace std::chrono;
 
 void f() {
   auto t0 = high_resolution_clock::now();
   std::this_thread::sleep_for(milliseconds { 20 });
   auto t1 = high_resolution_clock::now();
-  std::cout << duration_cast<nanoseconds>(t1 - t0).count() << " nanoseconds passed.\n";
+  std::cout << std::chrono::duration_cast<std::chrono::milliseconds>(t1 - t0).count()
+    << " milliseconds passed.\n";
 }
 
 class Message {   // object to be communicated
@@ -18,7 +25,7 @@ std::condition_variable mcond;    // the variable communicating events
 std::mutex mmutex;                // the locking mechanism
 
 void consumer() {
-  while (true) {
+  while(true) {
     // acquire mmutex
     std::unique_lock<std::mutex> lck { mmutex };
 
@@ -26,15 +33,15 @@ void consumer() {
     // re-acquire lck upon wakeup
     mcond.wait(lck, [] { return !mqueue.empty(); });
 
-    auto m = mqueue.front();    // get the message
+    auto m = mqueue.front();      // get the message
     mqueue.pop();
-    lck.unlock();                       // release lck
+    lck.unlock();                 // release lck
     // ... process m ...
   }
 }
 
 void producer() {
-  while (true) {
+  while(true) {
     Message m;
     // ... fill the message ...
     std::unique_lock<std::mutex> lck { mmutex };  // protect operations
@@ -45,4 +52,8 @@ void producer() {
 
 int main() {
   f();
+  std::thread t1 { consumer };
+  std::thread t2 { producer };
+  t1.join();
+  t2.join();
 }
