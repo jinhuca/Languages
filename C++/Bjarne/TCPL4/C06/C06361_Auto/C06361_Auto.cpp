@@ -5,6 +5,7 @@ void f() {
   int a1 = 123;
   char a2 = 123;
   auto a3 = 123;
+  std::list<int> x3 = {1, 2, 3};
 }
 
 template<typename T>
@@ -29,7 +30,7 @@ void k(int& v) {
 
 int main() {
   f();
-  auto d = std::complex<double> { 1,2 };
+  auto d = std::complex<double> {1,2};
   g(d);
   int a = 1;
   k(a);
