@@ -8,6 +8,7 @@ void initialize_with_list() {
 
   //char v3[2] { 'a','b', 0 };     // compile-time error: too many initializers
   char v4[3] { 'a','b', 0 };
+  char v4_2[5] { 'a','b' };     // it's OK: filled with defaults: too few initializers
   int v5[10] { 1, 2, 3, 4 };        // it's OK: filled with defaults: too few initializers
 }
 

@@ -22,6 +22,10 @@ int a1[10];                 // 10 ints in static storage
 void k() {
   int a2[20];               // 20 ints on the stack
   int* p = new int[10];     // 40 ints on the free store
+  p[1] = 42;
+  for(int i = 0; i != 10; ++i)
+    std::cout << p[i] << ' ';
+
   delete[] p;
 }
 

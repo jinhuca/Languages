@@ -8,7 +8,11 @@ void f() {
   char* p = v;    // implicit conversion of char[] to char*
   int a = strlen(p);
   int b = strlen(v);      // implicit conversion of char[] to char*
-  //v = p;          // error: cannot assign to array
+  //v = p;          // error: cannot assign to array 
+}
+
+void g(int arr[5]) {
+  std::cout << sizeof(arr) << '\n';  // prints the size of a pointer, not the size of the array
 }
 
 int main() {
