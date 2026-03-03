@@ -1,7 +1,8 @@
 // C074_Pointers_into_arrays.cpp 
 import std;
+#include <string.h>
 
-extern "C" int strlen(const char*);
+//extern "C" int strlen(const char*);
 
 void f() {
   char v[] = "Annemarie";
@@ -25,4 +26,5 @@ int main() {
   int* p5 = v + 7;            // beyond the end, undefined: don't do it
 
   f();
+  g(v);                       // passing an array decays to a pointer
 }

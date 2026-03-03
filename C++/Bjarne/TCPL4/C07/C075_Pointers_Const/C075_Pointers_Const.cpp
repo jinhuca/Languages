@@ -3,7 +3,7 @@ import std;
 
 void f() {
   const int model = 90;           // model is a const
-  const int v[] { 1,2,3,4 };      // v[i] is a const
+  const int v[] {1,2,3,4};      // v[i] is a const
   //const int x;                  // error: no initializer
   //model = 200;                  // error: can't change
   //v[2] = 3;                     // error: can't change
@@ -40,6 +40,7 @@ void f1(char* p) {
 }
 
 int main() {
+  f();
   char p1[] = "hello";
   f1(p1);
 }
