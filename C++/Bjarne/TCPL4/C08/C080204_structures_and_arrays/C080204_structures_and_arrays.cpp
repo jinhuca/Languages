@@ -1,4 +1,4 @@
-// C0824_Structures_Arrays.cpp 
+// C080204_structures_and_arrays.cpp 
 import std;
 
 struct Point {

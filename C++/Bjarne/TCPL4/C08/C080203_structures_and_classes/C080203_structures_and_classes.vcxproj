@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{6621cab7-214b-41f7-be8b-670b37b5b643}</ProjectGuid>
-    <RootNamespace>C0824StructuresArrays</RootNamespace>
+    <ProjectGuid>{64f7ee55-d18f-45c7-a3e4-70ce62ce34eb}</ProjectGuid>
+    <RootNamespace>C0823StructuresClasses</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C080203_structures_and_classes</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C0824_Structures_Arrays.cpp" />
+    <ClCompile Include="C080203_structures_and_classes.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

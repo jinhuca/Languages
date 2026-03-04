@@ -21,10 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{83fe23ca-bd94-4931-92aa-b9f8f4a7428e}</ProjectGuid>
-    <RootNamespace>C0821StuctLayout</RootNamespace>
+    <ProjectGuid>{01881524-e7ee-42f2-bef0-32440638a2aa}</ProjectGuid>
+    <RootNamespace>C082Structures</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>C0821_Struct_Layout</ProjectName>
+    <ProjectName>C0802_structures</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C0821_Struct_Layout.cpp" />
+    <ClCompile Include="C0802_structures.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

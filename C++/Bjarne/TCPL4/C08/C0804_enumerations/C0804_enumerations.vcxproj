@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{01881524-e7ee-42f2-bef0-32440638a2aa}</ProjectGuid>
-    <RootNamespace>C082Structures</RootNamespace>
+    <ProjectGuid>{849eb5b5-c491-4f28-8055-af19c99a769b}</ProjectGuid>
+    <RootNamespace>C084Enumerations</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,7 +126,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C082_Structures.cpp" />
+    <ClCompile Include="C0804_enumerations.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

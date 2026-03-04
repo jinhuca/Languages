@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{00f3ecdf-a772-4db9-a58d-4616ee6415e8}</ProjectGuid>
-    <RootNamespace>C0822StructNames</RootNamespace>
+    <ProjectGuid>{120ce26f-ca32-4ef4-8b74-29fc4f13e036}</ProjectGuid>
+    <RootNamespace>C083Unions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,7 +126,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C0822_Struct_Names.cpp" />
+    <ClCompile Include="C0803_unions.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
