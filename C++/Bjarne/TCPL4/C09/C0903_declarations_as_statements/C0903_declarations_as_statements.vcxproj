@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{512b50c3-431e-4ab0-b6cd-85bed7979cfb}</ProjectGuid>
-    <RootNamespace>C0942Switchstatements</RootNamespace>
+    <ProjectGuid>{E46592EE-03A9-47CF-8B2C-6A6830CE1746}</ProjectGuid>
+    <RootNamespace>C093Declarations</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C0903_declarations_as_statements</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C0942_Switch_statements.cpp" />
+    <ClCompile Include="C0903_declarations_as_statements.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

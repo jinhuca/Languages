@@ -1,4 +1,4 @@
-// C093_Declarations.cpp 
+// C0903_declarations_as_statements.cpp 
 import std;
 
 void f(std::vector<std::string>& v, int i, const char* p) {
@@ -11,11 +11,11 @@ void f(std::vector<std::string>& v, int i, const char* p) {
   // ...
 }
 
-void g() {
+void use() {
   std::string s1;
   s1 = "The best is the enemy of the good.";
   // ...
-  std::string s2 { "Voltaire" };
+  std::string s2 {"Voltaire"};
 }
 
 constexpr int max = 1024;
@@ -30,5 +30,5 @@ void input() {
 }
 
 int main() {
-
+  use();
 }
