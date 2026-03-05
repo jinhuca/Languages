@@ -1,4 +1,4 @@
-// C102_Calculator.cpp
+// C1002_desk_calculator.cpp
 import std;
 
 int no_of_errors;
@@ -29,8 +29,8 @@ struct Token {
 
 class Token_stream {
 public:
-  Token_stream(std::istream& s) : ip { &s }, owns { false } {}
-  Token_stream(std::istream* p) : ip { p }, owns { true } {}
+  Token_stream(std::istream& s) : ip {&s}, owns {false} {}
+  Token_stream(std::istream* p) : ip {p}, owns {true} {}
 
   ~Token_stream() { close(); }
 
@@ -43,21 +43,21 @@ private:
   void close() { if(owns) delete ip; }
   std::istream* ip;
   bool owns;
-  Token ct { Kind::end };
+  Token ct {Kind::end};
 };
-Token_stream ts { std::cin };
+Token_stream ts {std::cin};
 Token Token_stream::get() {
   char ch;
   do {
     if(!ip->get(ch)) {
-      return ct = { Kind::end };
+      return ct = {Kind::end};
     }
   } while(ch != '\n' && std::isspace(ch));
 
   switch(ch) {
     case ';':
     case '\n':
-      return ct = { Kind::print };
+      return ct = {Kind::print};
     case '*':
     case '/':
     case '+':
@@ -65,7 +65,7 @@ Token Token_stream::get() {
     case '(':
     case ')':
     case '=':
-      return ct = { static_cast<Kind>(ch) };
+      return ct = {static_cast<Kind>(ch)};
     case '0':
     case '1':
     case '2':
@@ -77,12 +77,12 @@ Token Token_stream::get() {
     case '8':
     case '9':
     case '.':
-    {
-      ip->putback(ch);
-      *ip >> ct.number_value;
-      ct.kind = Kind::number;
-      return ct;
-    }
+      {
+        ip->putback(ch);
+        *ip >> ct.number_value;
+        ct.kind = Kind::number;
+        return ct;
+      }
     default:
       if(std::isalpha(ch)) {
         ct.string_value = ch;
@@ -90,10 +90,10 @@ Token Token_stream::get() {
           ct.string_value += ch;
         }
         ip->putback(ch);
-        return ct = { Kind::name,ct.string_value };
+        return ct = {Kind::name,ct.string_value};
       }
       error("bad token");
-      return ct = { Kind::print };
+      return ct = {Kind::print};
   }
 }
 
@@ -143,28 +143,28 @@ double prim(bool get) {
 
   switch(ts.current().kind) {
     case Kind::number:
-    {
-      double v = ts.current().number_value;
-      ts.get();
-      return v;
-    }
+      {
+        double v = ts.current().number_value;
+        ts.get();
+        return v;
+      }
     case Kind::name:
-    {
-      double& v = table[ts.current().string_value];
-      if(ts.get().kind == Kind::assign) {
-        v = expr(true);
+      {
+        double& v = table[ts.current().string_value];
+        if(ts.get().kind == Kind::assign) {
+          v = expr(true);
+        }
+        return v;
       }
-      return v;
-    }
     case Kind::lp:
-    {
-      auto e = expr(true);
-      if(ts.current().kind != Kind::rp) {
-        return error("')' expected");
+      {
+        auto e = expr(true);
+        if(ts.current().kind != Kind::rp) {
+          return error("')' expected");
+        }
+        void(ts.get());
+        return e;
       }
-      void(ts.get());
-      return e;
-    }
     default:
       return error("primary expected");
   }
@@ -190,7 +190,7 @@ int main(int arg, char* argv[]) {
     case 1:
       break;
     case 2:
-      ts.set_input(new std::istringstream { argv[1] });
+      ts.set_input(new std::istringstream {argv[1]});
       break;
     default:
       error("too many arguments");
