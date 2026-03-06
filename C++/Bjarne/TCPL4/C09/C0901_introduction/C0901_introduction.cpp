@@ -2,6 +2,7 @@
 // A statement is a complete instruction that performs some action. 
 // In C++, statements are typically terminated with a semicolon (;). 
 // The main function is the entry point of a C++ program, and it contains the statements that define the program's behavior.
+
 #include <iostream>
 
 int main() {

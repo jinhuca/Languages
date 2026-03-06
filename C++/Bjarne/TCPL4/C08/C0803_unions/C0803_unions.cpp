@@ -1,96 +1,61 @@
 // C0803_unions.cpp 
-import std;
+#include <iostream>
 
 enum Type { str, num };
 
-namespace struct_without_union {
-  struct Entry {
-    char* name;
-    Type t;
-    char* s;      // use s if t == str
-    int i;        // use i if t = num
-  };
+struct Entry {
+  char* name;
+  Type t;
+  char* s;    // use s if t == str
+  int i;      // use i if t == num
+};
 
-  void f(Entry* p) {
-    if(p->t == str) {
-      std::cout << "using str: " << p->s;
-    }
-    else {
-      std::cout << "using int: " << p->i;
-    }
-    // ...
+void use_entry_struct(Entry* p) {
+  if(p->t == str) {
+    std::cout << "string: " << p->s << '\n';
+  }
+  else {
+    std::cout << "number: " << p->i << '\n';
   }
 }
 
-namespace struct_use_union {
-  union Value {
-    char* s;
-    int i;
-  };
+union Value {
+  char* s;    // use s if t == str
+  int i;      // use i if t == num
+};
 
-  struct Entry {
-    char* name;
-    Type t;
-    Value v;    // use v.s if t == str; use v.i if t == num
-  };
+struct Entry2 {
+  char* name;
+  Type t;
+  Value v;    // use v.s if t == str, use v.i if t == num
+};
 
-  void f(Entry* p) {
-    if(p->t == str) {
-      std::cout << "using str in union: " << p->v.s;
-    }
-    else if(p->t == num) {
-      std::cout << "using int in union: " << p->v.i;
-    }
-
+void use_entry_union(Entry2* p) {
+  if(p->t == str) {
+    std::cout << "string: " << p->v.s << '\n';
+  }
+  else {
+    std::cout << "number: " << p->v.i << '\n';
   }
 }
 
-void f_struct() {
-  char n[] = "John";
-  char s[] = "id";
-  struct_without_union::Entry e1 = {
-    n,
-    Type::str,
-    s,
-    134
-  };
-  struct_without_union::f(&e1);
+union Fudge {
+  int i;
+  int* p;
+};
+
+int* cheat(int i) {
+  Fudge a;
+  a.i = i;
+  return a.p;
 }
 
-void f_union() {
-  char n[] = "Joe";
-  char s[] = "hello";
-  struct_use_union::Value v { s };
-  struct_use_union::Entry e1 = {
-    n,
-    Type::str,
-    v
-  };
-  struct_use_union::f(&e1);
-}
-
-namespace type_conversion_cheating {
-  union Fudge {
-    int i;
-    int* p;
-  };
-
-  int* cheat(int i) {
-    Fudge a;
-    a.i = i;
-    return a.p;     // bad use
-  }
-
-  int* cheat2(int i) {
-    return reinterpret_cast<int*>(i);     // obviously ugly and dangerous
-  }
+int* cheat2(int i) {
+  return reinterpret_cast<int*>(i);
 }
 
 int main() {
-  //f_struct();
-  //f_union();
-  auto x1 = type_conversion_cheating::cheat(123);
-  std::cout << *x1 << '\n';
-  auto x2 = type_conversion_cheating::cheat2(123);
-  std::cout << *x2 << '\n';
+  char n[] = "entry1";
+  char str[] = "hello";
+  Entry e1 = { n, Type::str, str, 10 };
 }

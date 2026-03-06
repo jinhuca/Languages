@@ -43,6 +43,11 @@ void f(bool b, int i, int* p) {
   if_enum();
 }
 
+void f1(int i) {
+  if(i)
+    int x = i + 2;    // declaration on if-statement branch
+}
+
 void f2(int i) {
   if(i) {
     int x = i + 2;
@@ -61,9 +66,15 @@ void f3(int i) {
   //++x;    // error: x is not in scope now.
 }
 
+int max(int a, int b) {
+  return (a > b) ? a : b;   // conditional operator: return the larger of a and b
+}
+
 int main() {
   bool b = false;
   int i = -2;
   int* p = nullptr;
   f(b, i, p);
+  std::cout << "max(3, 5): " << max(3, 5) << std::endl;
+  f1(3);
 }

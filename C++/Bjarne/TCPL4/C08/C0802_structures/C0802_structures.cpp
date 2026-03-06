@@ -1,54 +1,76 @@
-// C0802_structures.cpp
-import std;
+// C0802_structures.cpp 
+#include <iostream>
 
 struct Address {
-  const char* name;       // "Jim Dandy"
-  int number;             // 61
-  const char* street;     // "South St"
-  const char* town;       // "New Providence"
-  char state[2];          // 'N' 'J'
-  const char* zip;        // "07974"
+  const char* name;     // "Jim Dandy"
+  int number;           // 61
+  const char* street;   // "South St"
+  const char* town;     // "New Providence"
+  char state[2];        // 'N''J'
+  const char* zip;      // "07974"
 };
 
-Address address;
+Address jd = { 
+  "Jim Dandy", 
+  61, 
+  "South St", 
+  "New Providence", 
+  {'N', 'J'},
+  "07974" 
+};
 
-void initialize_struct_members(Address& addr) {
-  addr.name = "Jim Dandy";
-  addr.number = 61;
-}
+void initialize_struct() {
+  Address jd1;
+  jd1.name = "Jim Dandy";
+  jd1.number = 61;
 
-void initialize_struct(Address& addr) {
-  addr = {
-  "Jim Dandy",
-  61,
-  "South St",
-  "New Providence",
-  {'N','J'},
-  "07974"
+  Address jd2 = { 
+    "Jim Dandy", 
+    61, 
+    "South St", 
+    "New Providence", 
+    {'N', 'J'},
+    "07974" 
   };
 }
 
-void print_struct_by_pointer(const Address* p) {
-  std::cout << "Name:\t" << p->name << '\n'
-    << "Number:\t" << p->number << '\n'
-    << "Street:\t" << p->street << '\n'
-    << "Town:\t" << p->town << '\n'
-    << "State:\t" << p->state[0] << p->state[1] << '\n'
-    << "Zip:\t" << p->zip << "\n\n";
+void assign_struct() {
+  Address jd1;
+  jd1 = jd; // assign one struct to another
 }
 
-void print_struct_by_reference(const Address& r) {
-  std::cout << "Name:\t" << r.name << '\n'
-    << "Number:\t" << r.number << '\n'
-    << "Street:\t" << r.street << '\n'
-    << "Town:\t" << r.town << '\n'
-    << "State:\t" << r.state << '\n'
-    << "Zip:\t" << r.zip << "\n\n";
+void print_addr_via_variable(const Address p) {
+  std::cout << "print address via variable:\n";
+  std::cout << p.name << '\n'
+    << p.number << ' ' << p.street << '\n'
+    << p.town << '\n'
+    << p.state[0] << p.state[1] << ' ' << p.zip << "\n\n";
+}
+
+void print_addr_via_reference(const Address& r) {
+  std::cout << "print address via reference:\n";
+  std::cout << r.name << '\n'
+    << r.number << ' ' << r.street << '\n'
+    << r.town << '\n'
+    << r.state[0] << r.state[1] << ' ' << r.zip << "\n\n";
+}
+
+void print_addr_via_pointer(const Address* p) {
+  std::cout << "print address via pointer:\n";
+  std::cout << (*p).name << '\n'
+    << (*p).number << ' ' << (*p).street << '\n'
+    << (*p).town << '\n'
+    << (*p).state[0] << (*p).state[1] << ' ' << (*p).zip << "\n\n";
+}
+
+void print_demo() {
+  print_addr_via_variable(jd);
+  print_addr_via_reference(jd);
+  print_addr_via_pointer(&jd);
 }
 
 int main() {
-  initialize_struct_members(address);
-  initialize_struct(address);
-  print_struct_by_pointer(&address);
-  print_struct_by_reference(address);
+  initialize_struct();
+  assign_struct();
+  print_demo();
 }

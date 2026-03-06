@@ -1,0 +1,21 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C080201_struct_layout/C080201_struct_layout.vcxproj" Id="9a0b0fd4-6567-4116-aeb9-40b4f50a6ec6" />
+  <Project Path="C080202_struct_names/C080202_struct_names.vcxproj" Id="7ce26e1d-0daa-4abc-ae89-302217aa3f91" />
+  <Project Path="C080203_structures_and_classes/C080203_structures_and_classes.vcxproj" Id="4dfbcb85-b002-4c66-8a2a-b11d5f1dd1c9" />
+  <Project Path="C080204_structures_and_arrays/C080204_structures_and_arrays.vcxproj" Id="2ae0f09c-af7d-4fc7-a040-42c5b89a9ded" />
+  <Project Path="C080205_type_equivalence/C080205_type_equivalence.vcxproj" Id="af5117c1-b456-4f0e-8bcb-25c021a834c1" />
+  <Project Path="C080206_plain_old_data/C080206_plain_old_data.vcxproj" Id="9279a7c5-300e-46c3-b0b7-2277d359f02a" />
+  <Project Path="C080207_fields/C080207_fields.vcxproj" Id="ce8ee85b-a981-40ff-affc-be29dadd6ee5" />
+  <Project Path="C0802_structures/C0802_structures.vcxproj" Id="a375643a-23b2-4343-9794-2efd5d60b243" />
+  <Project Path="C080301_unions_and_classes/C080301_unions_and_classes.vcxproj" Id="9a7e65fe-785d-482d-ad52-0faede544438" />
+  <Project Path="C080302_anonymous_unions/C080302_anonymous_unions.vcxproj" Id="94042e13-063f-4ef4-ac48-ae0e3fcee9aa" />
+  <Project Path="C0803_unions/C0803_unions.vcxproj" Id="2db54521-3aa2-4492-ac74-f4fd39d7a16b" />
+  <Project Path="C080401_enum_classes/C080401_enum_classes.vcxproj" Id="dccdd9fc-0cd1-4bb5-8d20-2a3744d81066" />
+  <Project Path="C080402_plain_enums/C080402_plain_enums.vcxproj" Id="5e8b536f-c6ad-4e2b-acb5-122dc8c7e7c6" />
+  <Project Path="C080403_unnamed_enums/C080403_unnamed_enums.vcxproj" Id="f3e8edb8-b9cf-4278-b90e-c98479969f9b" />
+  <Project Path="C0804_enumerations/C0804_enumerations.vcxproj" Id="94b7b187-5d3a-44ed-ac4c-8d3128c449fc" />
+</Solution>

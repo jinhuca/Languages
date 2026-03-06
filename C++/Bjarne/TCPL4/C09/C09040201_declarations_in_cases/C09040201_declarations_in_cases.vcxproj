@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{2db54521-3aa2-4492-ac74-f4fd39d7a16b}</ProjectGuid>
-    <RootNamespace>C0803unions</RootNamespace>
+    <ProjectGuid>{0eca1f2a-b08e-40d8-b0ac-8641ddd71e01}</ProjectGuid>
+    <RootNamespace>C09040201declarationsincases</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C0803_unions.cpp" />
+    <ClCompile Include="C09040201_declarations_in_cases.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

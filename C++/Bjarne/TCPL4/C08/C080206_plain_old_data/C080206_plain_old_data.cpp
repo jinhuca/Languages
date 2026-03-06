@@ -1,20 +1,49 @@
-// C080206_plain_old_data.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// C080206_plain_old_data.cpp 
 #include <iostream>
+#include <type_traits>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// a POD
+struct S0 {};
+
+// a POD
+struct S1 { int a; };
+
+// not a POD - no default constructor
+struct S2 { int a; S2(int aa) :a(aa) {} };
+
+// a POD - defaulted default constructor
+struct S3 { int a; S3(int aa) : a(aa) {} S3() {}; };
+
+// a POD - defaulted default constructor
+struct S4 { int a; S4(int aa) : a(aa) {} S4() = default; };
+
+// not a POD (has a virtual function)
+struct S5 { int a; virtual void f() {} };
+
+// a POD
+struct S6 : S1 {};
+
+// a POD
+struct S7 : S0 { int b; };
+
+// not a POD (data in both S1 and S8)
+struct S8 : S1 { int b; };
+
+// a POD
+struct S9 : S1 {};
+
+template<typename T>
+void mycopy(T* dest, const T* src, size_t n) {
+  if(std::is_pod<T>::value) {
+    std::memcpy(dest, src, n * sizeof(T));
+  }
+  else {
+    for(size_t i = 0; i != n; ++i) {
+      dest[i] = src[i];
+    }
+  }
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int main() {
+  std::cout << "Hello World!\n";
+}
