@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{79815c91-346c-4ef7-bb45-1dd66df785e1}</ProjectGuid>
-    <RootNamespace>C1032OrderofEvaluation</RootNamespace>
+    <ProjectGuid>{58FCA9DD-31EA-41D3-B4E1-CB1B5B8A59E6}</ProjectGuid>
+    <RootNamespace>C1042Consts</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C100402_consts</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1032_Order_of_Evaluation.cpp" />
+    <ClCompile Include="C100402_consts.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

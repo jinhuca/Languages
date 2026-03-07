@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{69e8060f-9443-47aa-ab6b-60fe306e6f9d}</ProjectGuid>
-    <RootNamespace>C1045AddressConstants</RootNamespace>
+    <ProjectGuid>{e8e8e5bf-cd02-4342-b031-603a59102fcd}</ProjectGuid>
+    <RootNamespace>C1034Temporaryobjects</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C100304_temporary_objects</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1045_Address_Constants.cpp" />
+    <ClCompile Include="C100304_temporary_objects.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

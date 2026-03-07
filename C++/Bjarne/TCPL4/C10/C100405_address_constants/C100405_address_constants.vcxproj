@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{5a3298fc-68c8-4fd1-a71e-7fef2a00f513}</ProjectGuid>
-    <RootNamespace>C1044ReferenceArguments</RootNamespace>
+    <ProjectGuid>{A750C430-BE7D-415B-9212-992F00C2406D}</ProjectGuid>
+    <RootNamespace>C1045AddressConstants</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C100405_address_constants</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1044_Reference_Arguments.cpp" />
+    <ClCompile Include="C100405_address_constants.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

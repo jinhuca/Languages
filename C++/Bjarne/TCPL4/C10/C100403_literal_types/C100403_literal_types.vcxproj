@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{67a744d8-7ff7-462c-85aa-13a4fb4f3306}</ProjectGuid>
-    <RootNamespace>C104ConstantExpressions</RootNamespace>
+    <ProjectGuid>{450C96A7-AD20-4178-ADED-AEB6C862A2DB}</ProjectGuid>
+    <RootNamespace>C1043LiteralTypes</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C100403_literal_types</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C104_Constant_Expressions.cpp" />
+    <ClCompile Include="C100403_literal_types.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

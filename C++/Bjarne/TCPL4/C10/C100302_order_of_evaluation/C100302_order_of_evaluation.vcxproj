@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{e8e8e5bf-cd02-4342-b031-603a59102fcd}</ProjectGuid>
-    <RootNamespace>C1034Temporaryobjects</RootNamespace>
+    <ProjectGuid>{79815c91-346c-4ef7-bb45-1dd66df785e1}</ProjectGuid>
+    <RootNamespace>C1032OrderofEvaluation</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C100302_order_of_evaluation</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -126,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1034_Temporary_objects.cpp" />
+    <ClCompile Include="C100302_order_of_evaluation.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
