@@ -130,6 +130,8 @@
     <ClCompile Include="C1002_desk_calculator.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Symbols.h" />
     <ClInclude Include="Token.h" />
     <ClInclude Include="Token_stream.h" />
     <ClInclude Include="Utilities.h" />

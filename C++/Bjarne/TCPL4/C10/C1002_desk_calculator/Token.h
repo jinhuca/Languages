@@ -14,6 +14,7 @@ enum class Kind : char {
   lp = '(',
   rp = ')'
 };
+
 struct Token {
   Kind kind;
   std::string string_value;

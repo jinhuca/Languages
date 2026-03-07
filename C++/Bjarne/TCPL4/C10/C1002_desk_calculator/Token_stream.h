@@ -10,8 +10,8 @@ public:
 
   ~Token_stream() { close(); }
 
-  Token get();
-  Token& current() { return ct; }
+  Token get();          // get the next token from the input
+  Token& current();     // get the current token
 
   void set_input(std::istream& s) { close(); ip = &s; owns = false; }
   void set_input(std::istream* p) { close(); ip = p; owns = true; }
@@ -21,7 +21,11 @@ private:
   bool owns;
   Token ct { Kind::end };
 };
-Token_stream ts { std::cin };
+
+Token& Token_stream::current() {
+  return ct;
+}
+
 Token Token_stream::get() {
   char ch;
   do {
@@ -72,3 +76,7 @@ Token Token_stream::get() {
     return ct = { Kind::print };
   }
 }
+
+// Token_stream ts is an instance of the Token_stream class initialized to 
+// read input from the standard input stream(std::cin)
+Token_stream ts(std::cin);
