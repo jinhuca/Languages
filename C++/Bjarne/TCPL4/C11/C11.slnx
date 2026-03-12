@@ -1,0 +1,13 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C110101_logical_operators/C110101_logical_operators.vcxproj" Id="d4683876-0130-42e5-88e1-e1530ba4bdc3" />
+  <Project Path="C110102_bitwise_operators/C110102_bitwise_operators.vcxproj" Id="d2d1fa1d-61a8-4c8c-9223-9fb5518f4c78" />
+  <Project Path="C110103_conditional_expressions/C110103_conditional_expressions.vcxproj" Id="d8e35019-b63d-4395-8736-8cc6554a7b8a" />
+  <Project Path="C110104_increment_decrement/C110104_increment_decrement.vcxproj" Id="3c5673aa-2462-4d13-ab44-9833edb233cd" />
+  <Project Path="C110200_free_store/C110200_free_store.vcxproj" Id="f770f9de-40aa-4873-a43e-d7e4e54bd59b" />
+  <Project Path="C110201_memory_management/C110201_memory_management.vcxproj" Id="69a2a151-9669-44e0-9a86-b714cd241ae1" />
+  <Project Path="C110202_arrays/C110202_arrays.vcxproj" Id="78192f74-cb80-4a6b-9053-3d03a423ca97" />
+</Solution>

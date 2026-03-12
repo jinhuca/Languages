@@ -1,13 +1,11 @@
 // C1002_desk_calculator.cpp
-//import std;
 #include <iostream>
 #include <sstream>
 
-#include "Token.h"
-#include "Token_stream.h"
-#include "Utilities.h"
-#include "Parser.h"
-#include "Symbols.h"
+#include "./symbols/Symbols.h"
+#include "./input/Token.h"
+#include "./driver/Utilities.h"
+#include "./parser/Parser.h"
 
 void calculate() {
   for(;;) {

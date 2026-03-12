@@ -1,5 +1,5 @@
-// C1112_Bitwise_Ops.cpp 
-import std;
+// C110202_arrays.cpp 
+#include <iostream>
 
 int main() {
   std::cout << "Hello World!\n";
