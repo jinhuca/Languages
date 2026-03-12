@@ -1,7 +1,7 @@
 #pragma once
 #include <iostream>
-#include "Token.h"
-#include "../driver/Utilities.h"
+#include "token.h"
+#include "../driver/utilities.h"
 
 class Token_stream {
 public:

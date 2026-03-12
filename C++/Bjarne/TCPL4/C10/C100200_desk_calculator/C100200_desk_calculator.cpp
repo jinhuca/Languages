@@ -2,10 +2,10 @@
 #include <iostream>
 #include <sstream>
 
-#include "./symbols/Symbols.h"
-#include "./input/Token.h"
-#include "./driver/Utilities.h"
-#include "./parser/Parser.h"
+#include "./symbols/symbols.h"
+#include "./input/token.h"
+#include "./driver/utilities.h"
+#include "./parser/parser.h"
 
 void calculate() {
   for(;;) {

@@ -24,7 +24,7 @@
     <ProjectGuid>{67a744d8-7ff7-462c-85aa-13a4fb4f3306}</ProjectGuid>
     <RootNamespace>C104ConstantExpressions</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>C1004_constant_expressions</ProjectName>
+    <ProjectName>C100400_constant_expressions</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1004_constant_expressions.cpp" />
+    <ClCompile Include="C100400_constant_expressions.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

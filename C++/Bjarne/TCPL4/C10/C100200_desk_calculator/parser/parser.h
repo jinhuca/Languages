@@ -1,7 +1,7 @@
 #pragma once
-#include "../driver/Utilities.h"
-#include "../symbols/Symbols.h"
-#include "../input/Token_stream.h"
+#include "../driver/utilities.h"
+#include "../symbols/symbols.h"
+#include "../input/token_stream.h"
 
 double expr(bool get);
 double term(bool get);

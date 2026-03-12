@@ -24,7 +24,7 @@
     <ProjectGuid>{63ed32d3-0df0-4868-95d6-6377ab5e1b1b}</ProjectGuid>
     <RootNamespace>C102Calculator</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-    <ProjectName>C1002_desk_calculator</ProjectName>
+    <ProjectName>C100200_desk_calculator</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,14 +127,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C1002_desk_calculator.cpp" />
+    <ClCompile Include="C100200_desk_calculator.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="driver\Utilities.h" />
-    <ClInclude Include="input\Token.h" />
-    <ClInclude Include="input\Token_stream.h" />
-    <ClInclude Include="parser\Parser.h" />
-    <ClInclude Include="symbols\Symbols.h" />
+    <ClInclude Include="driver\utilities.h" />
+    <ClInclude Include="input\token.h" />
+    <ClInclude Include="input\token_stream.h" />
+    <ClInclude Include="parser\parser.h" />
+    <ClInclude Include="symbols\symbols.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
