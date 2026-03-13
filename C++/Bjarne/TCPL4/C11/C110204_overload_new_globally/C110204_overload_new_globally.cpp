@@ -2,6 +2,27 @@
 #include <iostream>
 #include <new>
 
+void* operator new(std::size_t sz) {
+  std::cout << "new(size_t), size = " << sz << '\n';
+  if(sz == 0)
+    ++sz;   // avoid std::malloc(0) which may return nullptr on success
+  if(void* ptr = std::malloc(sz))
+    return ptr;
+  throw std::bad_alloc {};   // required
+}
+
+void operator delete(void* ptr) noexcept {
+  std::cout << "delete(void*)\n";
+  std::free(ptr);
+}
+
+void overload_new_in_global() {
+  int* p1 = new int;
+  delete p1;
+  double* d1 = new double;
+  delete d1;
+}
+
 class CustomMemory {
 public:
   // Class-specific operator new
@@ -29,5 +50,6 @@ void overload_new_in_class() {
 }
 
 int main() {
-  overload_new_in_class();
+  //overload_new_in_class();
+  overload_new_in_global();
 }

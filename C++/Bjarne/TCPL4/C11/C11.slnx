@@ -13,10 +13,12 @@
   <Project Path="C110202_strings/C110202_strings.vcxproj" Id="fa601fdd-dfd1-4155-96df-e265b2e9986f" />
   <Project Path="C110203_get_memory_space/C110203_get_memory_space.vcxproj" Id="7037f80a-177e-4da7-8db3-37cafab10c05" />
   <Project Path="C11020401_nothrow_new/C11020401_nothrow_new.vcxproj" Id="9c0aa3b8-b15a-430c-96e7-41c88104057f" />
-  <Project Path="C110204_overload_new/C110204_overload_new.vcxproj" Id="f141aec2-9434-46b7-abc4-a276fec16e84" />
+  <Project Path="C110204_overload_new_globally/C110204_overload_new_globally.vcxproj" Id="f141aec2-9434-46b7-abc4-a276fec16e84" />
+  <Project Path="C110204_overload_new_in_class/C110204_overload_new_in_class.vcxproj" Id="05325be1-d1e7-4cf8-926f-f5a999d63d81" />
   <Project Path="C110300_lists/C110300_lists.vcxproj" Id="836a205e-cf68-4ca1-8801-29a2b3d42b6f" />
   <Project Path="C110301_implementation_model/C110301_implementation_model.vcxproj" Id="81ade837-9123-4ada-b6c3-434d5d9b2651" />
   <Project Path="C110302_qualified_lists/C110302_qualified_lists.vcxproj" Id="9ab3528e-94fd-4ee8-8fef-4078fe5e4e98" />
   <Project Path="C110303_unqualified_lists/C110303_unqualified_lists.vcxproj" Id="cdfb5546-4103-42e5-a0c9-3fef1b14fbe7" />
-  <Project Path="C110401_lambda/C110401_lambda.vcxproj" Id="0f896145-4334-45f8-8b1a-3eeb9ec09f00" />
+  <Project Path="C110400_define_lambda/C110400_define_lambda.vcxproj" Id="6a54c3a7-aa55-4c0d-9425-4c713d863bd5" />
+  <Project Path="C110401_implement_lambda/C110401_implement_lambda.vcxproj" Id="0f896145-4334-45f8-8b1a-3eeb9ec09f00" />
 </Solution>

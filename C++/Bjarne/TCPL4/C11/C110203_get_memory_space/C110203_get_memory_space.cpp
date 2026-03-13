@@ -2,7 +2,8 @@
 #include <iostream>
 #include <vector>
 
-void f() {
+// beware: this function try to allocate much memory to exhaust the physical and virtual memory.
+void f() {     
   std::vector<char*> v;
   try {
     for(;;) {

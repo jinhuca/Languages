@@ -21,9 +21,10 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{f141aec2-9434-46b7-abc4-a276fec16e84}</ProjectGuid>
-    <RootNamespace>C110204overloadnew</RootNamespace>
+    <ProjectGuid>{0f896145-4334-45f8-8b1a-3eeb9ec09f00}</ProjectGuid>
+    <RootNamespace>C110401lambda</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>C110401_implement_lambda</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -127,7 +128,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C110204_overload_new.cpp" />
+    <ClCompile Include="C110401_implement_lambda.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
