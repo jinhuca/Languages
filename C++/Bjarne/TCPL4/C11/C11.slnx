@@ -31,4 +31,7 @@
   <Project Path="C110405_type_of_lambda/C110405_type_of_lambda.vcxproj" Id="ef2d98ee-ad55-4847-abab-00b4f8f318a9" />
   <Project Path="C110500_explicit_type_conversion/C110500_explicit_type_conversion.vcxproj" Id="b68f3c74-6f6e-41bc-82bd-5525c622bd4a" />
   <Project Path="C110501_construction_conversions/C110501_construction_conversions.vcxproj" Id="9b6a2cb0-5aaa-4497-a9e9-c7a6e49d4da7" />
+  <Project Path="C110502_named_casts/C110502_named_casts.vcxproj" Id="67f9175a-2fa4-4045-937e-cc5908830a69" />
+  <Project Path="C110503_cstyle_cast/C110503_cstyle_cast.vcxproj" Id="812073b5-f804-4bd8-ab9b-40a10672df3b" />
+  <Project Path="C110504_function_style_cast/C110504_function_style_cast.vcxproj" Id="bc108602-9266-40d0-b064-255d882ea358" />
 </Solution>

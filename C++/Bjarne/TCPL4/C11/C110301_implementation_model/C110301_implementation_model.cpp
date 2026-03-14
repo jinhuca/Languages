@@ -7,9 +7,9 @@ void constructor_with_initializer_list() {
   std::vector<double> v1 = {1, 2, 3.14};
 
   // the above initialization is implemented as 
-  const double temp[] = {double{1}, double{2}, 3,14};
-  const std::initializer_list<double> tmp(temp, sizeof((temp) / sizeof(double)));
-  std::vector<double> v2(tmp);
+  //const double temp[] = {double{1}, double{2}, 3,14};
+  //const std::initializer_list<double> tmp(temp, sizeof((temp) / sizeof(double)));
+  //std::vector<double> v2(tmp);
 }
 
 void initializer_list_is_immutable() {

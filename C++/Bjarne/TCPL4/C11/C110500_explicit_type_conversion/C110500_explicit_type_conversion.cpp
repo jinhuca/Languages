@@ -1,6 +1,5 @@
 // C110500_explicit_type_conversion.cpp 
 #include <iostream>
-#include <exception>
 
 void convert_implicitly() {
   double d = 1234567890;   // integer to floating-point
@@ -10,7 +9,7 @@ void convert_implicitly() {
 template<typename Target, typename Source>
 Target narrow_cast(Source v) {
   auto r = static_cast<Target>(v);    // convert the value to the target type
-  if(static_cast<Source>(r) != v)
+  if(static_cast<Source>(r)!=v)
     throw std::runtime_error("narrow_cast<>() failed");
   return r;
 }
