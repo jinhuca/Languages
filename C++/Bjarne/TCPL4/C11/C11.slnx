@@ -21,4 +21,12 @@
   <Project Path="C110303_unqualified_lists/C110303_unqualified_lists.vcxproj" Id="cdfb5546-4103-42e5-a0c9-3fef1b14fbe7" />
   <Project Path="C110400_define_lambda/C110400_define_lambda.vcxproj" Id="6a54c3a7-aa55-4c0d-9425-4c713d863bd5" />
   <Project Path="C110401_implement_lambda/C110401_implement_lambda.vcxproj" Id="0f896145-4334-45f8-8b1a-3eeb9ec09f00" />
+  <Project Path="C110402_alternatives_to_lambda/C110402_alternatives_to_lambda.vcxproj" Id="52542d84-1a80-4091-bcbb-5787054305fa" />
+  <Project Path="C11040301_lambda_lifetime/C11040301_lambda_lifetime.vcxproj" Id="f8eb8a20-486b-4b66-927f-5dff284bd966" />
+  <Project Path="C11040302_namespace_names/C11040302_namespace_names.vcxproj" Id="790f0b89-6570-4a2c-8dd8-871f5095b963" />
+  <Project Path="C11040303_lambda_and_this/C11040303_lambda_and_this.vcxproj" Id="286bc918-4ca8-4f59-a567-3a67949c7b43" />
+  <Project Path="C11040304_mutable_lambda/C11040304_mutable_lambda.vcxproj" Id="c68bd33a-f722-4fa0-9115-981cf7625161" />
+  <Project Path="C110403_capture_in_lambda/C110403_capture_in_lambda.vcxproj" Id="f56ec23d-8ac8-430f-81fc-01f4526d8a8c" />
+  <Project Path="C110404_call_and_return/C110404_call_and_return.vcxproj" Id="1b3b1e26-7a06-414e-b823-8782fea27a4f" />
+  <Project Path="C110405_type_of_lambda/C110405_type_of_lambda.vcxproj" Id="ef2d98ee-ad55-4847-abab-00b4f8f318a9" />
 </Solution>

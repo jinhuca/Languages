@@ -25,7 +25,7 @@ public:
 };
 
 void print_modulo_fo(const std::vector<int>& v, std::ostream& os, int m) {
-  std::for_each(std::begin(v), std::end(v), Module_print(os, 3));
+  std::for_each(std::begin(v), std::end(v), Module_print(os, m));
 }
 
 void use_function_object() {
