@@ -29,4 +29,6 @@
   <Project Path="C110403_capture_in_lambda/C110403_capture_in_lambda.vcxproj" Id="f56ec23d-8ac8-430f-81fc-01f4526d8a8c" />
   <Project Path="C110404_call_and_return/C110404_call_and_return.vcxproj" Id="1b3b1e26-7a06-414e-b823-8782fea27a4f" />
   <Project Path="C110405_type_of_lambda/C110405_type_of_lambda.vcxproj" Id="ef2d98ee-ad55-4847-abab-00b4f8f318a9" />
+  <Project Path="C110500_explicit_type_conversion/C110500_explicit_type_conversion.vcxproj" Id="b68f3c74-6f6e-41bc-82bd-5525c622bd4a" />
+  <Project Path="C110501_construction_conversions/C110501_construction_conversions.vcxproj" Id="9b6a2cb0-5aaa-4497-a9e9-c7a6e49d4da7" />
 </Solution>
