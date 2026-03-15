@@ -1,0 +1,16 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C120100_function_declarations/C120100_function_declarations.vcxproj" Id="39a37ad8-8e01-4469-bf76-cb9da9733bab" />
+  <Project Path="C120102_parts_of_function_declaration/C120102_parts_of_function_declaration.vcxproj" Id="9beab9b7-f5cc-48da-a051-1ec5f58d7959" />
+  <Project Path="C120103_function_definitions/C120103_function_definitions.vcxproj" Id="c28dd167-712d-4eac-836e-458cf8a2c762" />
+  <Project Path="C120104_returning_values/C120104_returning_values.vcxproj" Id="204363b9-b4b8-48c9-bc5a-79da323f9f72" />
+  <Project Path="C120105_inline_functions/C120105_inline_functions.vcxproj" Id="563b8638-1c07-4214-8530-b55a7812f314" />
+  <Project Path="C12010601_constexpr_and_references/C12010601_constexpr_and_references.vcxproj" Id="e7178cd7-59b1-4dad-a8d1-62451c7c2226" />
+  <Project Path="C12010602_conditional_evaluation/C12010602_conditional_evaluation.vcxproj" Id="c8da2e1d-ec58-4d36-8040-1c9bbecde59a" />
+  <Project Path="C120106_constexpr_functions/C120106_constexpr_functions.vcxproj" Id="d6fe62dc-73ed-4ef9-a33c-37f2b52cea36" />
+  <Project Path="C120107_noreturn_functions/C120107_noreturn_functions.vcxproj" Id="ca805c2a-2ee8-450d-89f5-a8e1069485e5" />
+  <Project Path="C120108_local_variables/C120108_local_variables.vcxproj" Id="798c70dc-aee3-495e-a5d9-012242e412fe" />
+</Solution>
