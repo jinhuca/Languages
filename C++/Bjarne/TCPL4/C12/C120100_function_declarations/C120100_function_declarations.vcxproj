@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="C120100_function_declarations.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="..\C120300_overloaded_functions\C120300_overloaded_functions.vcxproj" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

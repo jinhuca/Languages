@@ -60,7 +60,7 @@ void k(P1 pf) {
 
 // take address of overloaded functions
 void q(int i) {}
-int q(char c) {}
+int q(char c) { return 1; }
 
 void (*pf11)(int) = &q;         // void q(int)
 int (*pf22)(char) = &q;         // int q(char)

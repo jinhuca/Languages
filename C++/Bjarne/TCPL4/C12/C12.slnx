@@ -16,4 +16,17 @@
   <Project Path="C120200_argument_passing/C120200_argument_passing.vcxproj" Id="2be68030-1cec-46c6-85b6-bc56a0df4ee2" />
   <Project Path="C120201_reference_arguments/C120201_reference_arguments.vcxproj" Id="c9b33f85-b9d7-47bc-a4cf-39a20bc34566" />
   <Project Path="C120202_array_arguments/C120202_array_arguments.vcxproj" Id="148ae01c-91c9-46d8-8109-fc1eec4c93c2" />
+  <Project Path="C120203_list_arguments/C120203_list_arguments.vcxproj" Id="d735a7a4-560d-41bb-b9b6-32afb9eb2142" />
+  <Project Path="C120204_unspecified_number_of_arguments/C120204_unspecified_number_of_arguments.vcxproj" Id="b5acd823-4267-41e3-84f4-c60b431e36a7" />
+  <Project Path="C120205_default_arguments/C120205_default_arguments.vcxproj" Id="b7b0eaf4-b0fd-45ea-98fd-357763e35047" />
+  <Project Path="C120300_overloaded_functions/C120300_overloaded_functions.vcxproj" Id="4d857f51-880c-4ea9-99d4-cfd7bdf2b287" />
+  <Project Path="C120301_automatic_overload_resolution/C120301_automatic_overload_resolution.vcxproj" Id="36f98a37-b3f8-4c3d-a8be-ced8aa1592f3" />
+  <Project Path="C120302_overload_and_return_type/C120302_overload_and_return_type.vcxproj" Id="ab60e876-802b-4cee-9c37-ea0859e3ba4c" />
+  <Project Path="C120303_overload_and_scope/C120303_overload_and_scope.vcxproj" Id="45800c4b-a775-43fb-a96b-96ff502a8dfd" />
+  <Project Path="C120304_resolution_for_multiple_arguments/C120304_resolution_for_multiple_arguments.vcxproj" Id="5760c7e5-a3c2-4c53-9995-9a5de78282b9" />
+  <Project Path="C120305_manual_overload_resolution/C120305_manual_overload_resolution.vcxproj" Id="0c2c4a2f-3622-4fa9-8ad9-12bb3731b4fe" />
+  <Project Path="C120400_pre_conditions_post_conditions/C120400_pre_conditions_post_conditions.vcxproj" Id="21e743b7-bc2c-4990-a420-76fc34cf1fea" />
+  <Project Path="C120500_pointer_to_function/C120500_pointer_to_function.vcxproj" Id="b93b8dd4-09c6-4c02-952b-c4c279c05b32" />
+  <Project Path="C120501_ptf_as_argument/C120501_ptf_as_argument.vcxproj" Id="3cd91f03-ec26-4e65-bc77-deaaba42317e" />
+  <Project Path="C120600_macros/C120600_macros.vcxproj" Id="ec8ff705-6da5-476f-bb24-d17946ef0fbc" />
 </Solution>
