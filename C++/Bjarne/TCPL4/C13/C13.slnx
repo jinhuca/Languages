@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C130101_exceptions/C130101_exceptions.vcxproj" Id="2e41c725-c7ea-4605-931a-a5bcbe563379" />
+  <Project Path="C130102_traditional_error_handling/C130102_traditional_error_handling.vcxproj" Id="f6c1b5c4-1d1d-4d6a-9575-03c8d3488115" />
+  <Project Path="C130104_alternative_views/C130104_alternative_views.vcxproj" Id="71008e46-c36a-4018-b328-8f9b379001b1" />
+  <Project Path="C130105_cannot_use_exceptions/C130105_cannot_use_exceptions.vcxproj" Id="61b2a72e-12bc-4319-9409-100df09a19a1" />
+</Solution>
