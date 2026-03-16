@@ -26,7 +26,7 @@ void check_args_1(int argc, char* argv[]) {
       char buffer[8];
       error(1, argv[0], "with", std::to_string(argc - 1), buffer, "arguments", nullptr);
   }
-  std::cerr<<'\n';
+  std::cerr << '\n';
 }
 
 void check_args_2(int argc, char* argv[]) {
@@ -43,8 +43,14 @@ void check_args_2(int argc, char* argv[]) {
   std::cerr << '\n';
 }
 
+void check_args_3(int argc, char* argv[]) {
+  auto args = arguments(argc, argv);
+  error(args.size() < 2 ? 0 : 1, args);
+}
+
 int main(int argc, char* argv[]) {
   check_args_1(argc, argv);
   check_args_2(argc, argv);
+  check_args_3(argc, argv);
   // ...
 }

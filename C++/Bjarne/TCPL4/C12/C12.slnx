@@ -18,4 +18,8 @@
   <Project Path="C120202_array_arguments/C120202_array_arguments.vcxproj" Id="148ae01c-91c9-46d8-8109-fc1eec4c93c2" />
   <Project Path="C120203_list_arguments/C120203_list_arguments.vcxproj" Id="d735a7a4-560d-41bb-b9b6-32afb9eb2142" />
   <Project Path="C120204_unspecified_number_of_arguments/C120204_unspecified_number_of_arguments.vcxproj" Id="b5acd823-4267-41e3-84f4-c60b431e36a7" />
+  <Project Path="C120205_default_arguments/C120205_default_arguments.vcxproj" Id="b7b0eaf4-b0fd-45ea-98fd-357763e35047" />
+  <Project Path="C120300_overloaded_functions/C120300_overloaded_functions.vcxproj" Id="4d857f51-880c-4ea9-99d4-cfd7bdf2b287" />
+  <Project Path="C120301_automatic_overload_resolution/C120301_automatic_overload_resolution.vcxproj" Id="36f98a37-b3f8-4c3d-a8be-ced8aa1592f3" />
+  <Project Path="C120302_overload_and_return_type/C120302_overload_and_return_type.vcxproj" Id="ab60e876-802b-4cee-9c37-ea0859e3ba4c" />
 </Solution>
