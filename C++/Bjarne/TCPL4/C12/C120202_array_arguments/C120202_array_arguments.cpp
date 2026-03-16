@@ -21,6 +21,19 @@ void g() {
   // f(a2);     // error: wrong number of elements
 }
 
+template<typename T, int N>
+void f(T(&r)[N]) {
+
+}
+
+void h() {
+  int a1[10];
+  double a2[1000];
+  f(a1);
+  f(a2);
+}
+
 int main() {
   f();
+  h();
 }

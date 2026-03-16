@@ -16,4 +16,6 @@
   <Project Path="C120200_argument_passing/C120200_argument_passing.vcxproj" Id="2be68030-1cec-46c6-85b6-bc56a0df4ee2" />
   <Project Path="C120201_reference_arguments/C120201_reference_arguments.vcxproj" Id="c9b33f85-b9d7-47bc-a4cf-39a20bc34566" />
   <Project Path="C120202_array_arguments/C120202_array_arguments.vcxproj" Id="148ae01c-91c9-46d8-8109-fc1eec4c93c2" />
+  <Project Path="C120203_list_arguments/C120203_list_arguments.vcxproj" Id="d735a7a4-560d-41bb-b9b6-32afb9eb2142" />
+  <Project Path="C120204_unspecified_number_of_arguments/C120204_unspecified_number_of_arguments.vcxproj" Id="b5acd823-4267-41e3-84f4-c60b431e36a7" />
 </Solution>
