@@ -1,20 +1,50 @@
-// C130105_cannot_use_exceptions.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// C130105_cannot_use_exceptions.cpp
 #include <iostream>
+#include <utility>
+#include <vector>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using std::pair;
+using std::vector;
+
+struct X {
+  X(int a, int b) :x{a}, y{b} {
+    if(a + b > 100) {
+      error_code = 1;
+      x = 0;
+      y = 0;
+    }
+  }
+  int invalid() const {
+    return error_code;
+  }
+private:
+  int x, y;
+  int error_code;
+};
+
+void minic_raii(int n, int m) {
+  X x(n, m);
+  if(x.invalid()) {
+    // ... deal with error ...
+  }
+  // ...
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+pair<vector<int>, int> make_vector(int n) {
+  if(n > 0 && n < 10)
+    return pair<vector<int>, int>{vector<int>(n), 0};
+  return pair<vector<int>, int>{vector<int>(0), 1};
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+void return_value_or_exception(int n) {
+  auto v = make_vector(n);    // return a pair
+  if(v.second) {
+    // ... deal with error ...
+  }
+  auto val = v.first;
+  // ...
+}
+
+int main() {
+  minic_raii(41, 120);
+}

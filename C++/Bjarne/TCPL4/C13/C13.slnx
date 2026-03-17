@@ -7,4 +7,12 @@
   <Project Path="C130102_traditional_error_handling/C130102_traditional_error_handling.vcxproj" Id="f6c1b5c4-1d1d-4d6a-9575-03c8d3488115" />
   <Project Path="C130104_alternative_views/C130104_alternative_views.vcxproj" Id="71008e46-c36a-4018-b328-8f9b379001b1" />
   <Project Path="C130105_cannot_use_exceptions/C130105_cannot_use_exceptions.vcxproj" Id="61b2a72e-12bc-4319-9409-100df09a19a1" />
+  <Project Path="C130106_hierarchical_error_handling/C130106_hierarchical_error_handling.vcxproj" Id="521e95c4-d01e-4003-a4b8-adb08651604c" />
+  <Project Path="C130107_exceptions_and_efficiency/C130107_exceptions_and_efficiency.vcxproj" Id="b1789b8b-008c-49d4-86fe-80319e5a56aa" />
+  <Project Path="C130200_exception_guarantees/C130200_exception_guarantees.vcxproj" Id="c6e5392d-2704-4a2d-9c70-6fb6bcf14c7c" />
+  <Project Path="C130300_resources_management/C130300_resources_management.vcxproj" Id="7c1c6a54-b318-4e5f-a983-4ac2de95c1a6" />
+  <Project Path="C130301_finally/C130301_finally.vcxproj" Id="a0d8c494-2acf-417f-895c-3aa2152997d5" />
+  <Project Path="C130400_enforcing_invariants/C130400_enforcing_invariants.vcxproj" Id="f97d6147-a38f-4359-af05-5752f57bc9ae" />
+  <Project Path="C130501_throwing_exceptions/C130501_throwing_exceptions.vcxproj" Id="03dd75c2-ae91-4760-9987-e34c5921db37" />
+  <Project Path="C130502_catching_exceptions/C130502_catching_exceptions.vcxproj" Id="18896d86-aeae-4c49-b7cb-b332c307b734" />
 </Solution>
