@@ -23,6 +23,7 @@ void taskmaster(int load) {
     // failure to do_task: handle problem
     std::cerr << "some error happened when do_task.\n";
   }
+  std::cout << "This line does not execute if Some_error happens and not handled.\n";
 }
 
 int main() {

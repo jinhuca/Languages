@@ -15,7 +15,7 @@ void terminate_if_error(int x) {
 
 /* Method 2: return an error code
 *  This is very limited approach, e.g., some functions have no return value.
-*  no generally-accepted error code.
+*  There is no generally-accepted error code.
 */
 int ERROR_CODE_1 = 101;
 int ERROR_CODE_2 = 102;
@@ -31,15 +31,21 @@ int get_int() {
 /* Method 3: return a legal value and leave the program in an "error state"
 */
 double get_sqrt(double d) {
+  if(d < 0) {
+    errno = 13;     // (1) set error number globally to indicate error happens.
+    return 1;       // (2) return a legal value, but it is meaningless.
+  }
   return sqrt(d);
 }
 
-void helper() {
-}
 /* Method 4: call an error-handler function
 */
+void helper(const char* msg) {
+  std::cerr << msg << '\n';   // can't handle properly.....
+}
+
 void call_another_function(int x) {
-  if(x > 100) helper();
+  if(x > 100) helper("error happens");
 }
 
 int main() {
