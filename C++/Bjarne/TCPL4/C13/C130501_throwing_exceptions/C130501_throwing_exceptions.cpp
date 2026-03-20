@@ -1,20 +1,55 @@
-// C130501_throwing_exceptions.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// C130501_throwing_exceptions.cpp
 #include <iostream>
+#include <string>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+using std::string;
+
+class No_copy {
+  No_copy(const No_copy&) = delete;    // prohibit copying
+};
+
+class My_error {
+  // ...
+};
+
+namespace throw_copy_of_object {
+  void f(int n) {
+    switch(n) {
+      case 0: throw My_error {};       // OK
+      //case 1: throw No_copy {};        // error: can't copy a No_copy
+      //case 2: throw No_copy;           // error: My_error is a type, rather than an object
+    }
+  }
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+namespace throw_stack_unwinding {
+  void h() {
+    string s = "not";
+    throw My_error {};
+    string s2 = "at all";
+  }
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+  void g() {
+    string s = "excess";
+    {
+      string s = "or";
+      h();
+    }
+  }
+
+  void f() {
+    string name {"Byron"};
+    try {
+      string s = "in";
+      g();
+    }
+    catch(My_error) {
+      // ...
+    }
+  }
+}
+
+int main() {
+  throw_copy_of_object::f(101);
+  throw_stack_unwinding::f();
+}

@@ -7,6 +7,7 @@
 using std::string;
 using std::runtime_error;
 using std::ostringstream;
+using std::exception;
 
 constexpr int CURRENT_MODE = 0;
 constexpr int CURRENT_LEVEL = 0;
@@ -25,12 +26,52 @@ namespace Assert {
   };
 
   string compose(const char* file, int line, const string& message) {
-    ostringstream oss{"("};
+    ostringstream oss {"("};
     oss << file << ", " << file << "):" << message;
     return oss.str();
   }
+
+  template<bool condition = level(default_level), typename Except = Error>
+  void dynamic(bool assertion, const string& message = "Assert::dynamic failed") {
+    if(assertion)
+      return;
+    if(current_mode == Mode::throw_)
+      throw exception(message.c_str());
+    if(current_mode == Mode::terminate_)
+      std::terminate();
+  }
+
+  template<>
+  void dynamic<false, Error>(bool, const string&) {   // do nothing
+  }
+
+  void dynamic(bool b, const string& s) {   // default action
+    dynamic<true, Error>(b, s);
+  }
+
+  void dynamic(bool b) {      // default message
+    dynamic<true, Error>(b);
+  }
+}
+
+constexpr int max = 1024;
+void f(int n) {   // n should be in [1:max)
+  Assert::dynamic<Assert::level(1), Assert::Error>(
+    (1 <= n && n < max),
+    Assert::compose(__FILE__, __LINE__, "range problem"));
+}
+
+void g(int n) {
+  Assert::dynamic((1 <= n && n < max),
+    Assert::compose(__FILE__, __LINE__, "range problem"));
+}
+
+void h(int n) {
+  Assert::dynamic(1 <= n && n < max);
 }
 
 int main() {
-  std::cout << "Hello World!\n";
+  //f(2001);
+  //g(2002);
+  h(1003);
 }
