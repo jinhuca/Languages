@@ -13,6 +13,9 @@
   <Project Path="C130300_resources_management/C130300_resources_management.vcxproj" Id="7c1c6a54-b318-4e5f-a983-4ac2de95c1a6" />
   <Project Path="C130301_finally/C130301_finally.vcxproj" Id="a0d8c494-2acf-417f-895c-3aa2152997d5" />
   <Project Path="C130400_enforcing_invariants/C130400_enforcing_invariants.vcxproj" Id="f97d6147-a38f-4359-af05-5752f57bc9ae" />
+  <Project Path="C13050101_noexception_functions/C13050101_noexception_functions.vcxproj" Id="d02192f7-a737-4fe3-ac98-70c11f4accac" />
+  <Project Path="C13050102_noexcept_operator/C13050102_noexcept_operator.vcxproj" Id="3a925487-ab19-417f-866d-d98bcee26226" />
+  <Project Path="C13050103_exception_specifications/C13050103_exception_specifications.vcxproj" Id="c931a475-67da-4a6e-98b1-e93a8648d8e4" />
   <Project Path="C130501_throwing_exceptions/C130501_throwing_exceptions.vcxproj" Id="03dd75c2-ae91-4760-9987-e34c5921db37" />
   <Project Path="C130502_catching_exceptions/C130502_catching_exceptions.vcxproj" Id="18896d86-aeae-4c49-b7cb-b332c307b734" />
 </Solution>
