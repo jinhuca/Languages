@@ -17,5 +17,11 @@
   <Project Path="C13050102_noexcept_operator/C13050102_noexcept_operator.vcxproj" Id="3a925487-ab19-417f-866d-d98bcee26226" />
   <Project Path="C13050103_exception_specifications/C13050103_exception_specifications.vcxproj" Id="c931a475-67da-4a6e-98b1-e93a8648d8e4" />
   <Project Path="C130501_throwing_exceptions/C130501_throwing_exceptions.vcxproj" Id="03dd75c2-ae91-4760-9987-e34c5921db37" />
+  <Project Path="C13050201_rethrow/C13050201_rethrow.vcxproj" Id="5e043be4-5ec5-4740-86f4-29e0c6e9ea26" />
+  <Project Path="C13050202_catch_every_exception/C13050202_catch_every_exception.vcxproj" Id="49fe71e8-7415-4bf9-9c92-3c16d13a056e" />
+  <Project Path="C13050203_multiple_handlers/C13050203_multiple_handlers.vcxproj" Id="317f90c2-bf6c-486b-b649-2289dc4fe73a" />
+  <Project Path="C13050204_function_try_blocks/C13050204_function_try_blocks.vcxproj" Id="6b1335c2-870e-4295-9f4d-a2eaa32cb17c" />
+  <Project Path="C13050205_termination/C13050205_termination.vcxproj" Id="f5e0506a-626a-4cf1-bfe1-ddd5df55f473" />
   <Project Path="C130502_catching_exceptions/C130502_catching_exceptions.vcxproj" Id="18896d86-aeae-4c49-b7cb-b332c307b734" />
+  <Project Path="C130503_exceptions_and_threads/C130503_exceptions_and_threads.vcxproj" Id="04d8b9b8-4f55-4253-901d-6637bb3c28d2" />
 </Solution>
