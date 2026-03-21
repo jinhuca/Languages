@@ -24,4 +24,5 @@
   <Project Path="C13050205_termination/C13050205_termination.vcxproj" Id="f5e0506a-626a-4cf1-bfe1-ddd5df55f473" />
   <Project Path="C130502_catching_exceptions/C130502_catching_exceptions.vcxproj" Id="18896d86-aeae-4c49-b7cb-b332c307b734" />
   <Project Path="C130503_exceptions_and_threads/C130503_exceptions_and_threads.vcxproj" Id="04d8b9b8-4f55-4253-901d-6637bb3c28d2" />
+  <Project Path="C130601_a_simple_vector/C130601_a_simple_vector.vcxproj" Id="e5ac0a68-ed3b-4a16-8480-a95a590f199a" />
 </Solution>
