@@ -1,6 +1,12 @@
-// C130601_a_simple_vector.cpp 
+// C130601_a_simple_vector.cpp
+#include "vector.h"
 #include <iostream>
 
-int main() {
-  std::cout << "Hello World!\n";
+void f()
+{
+}
+
+int main()
+{
+    f();
 }
