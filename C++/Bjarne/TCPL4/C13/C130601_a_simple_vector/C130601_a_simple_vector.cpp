@@ -4,6 +4,8 @@
 
 void f()
 {
+    simple_vector::vector<int> v(3);
+    std::cout << v.size() << '\n';
 }
 
 int main()
