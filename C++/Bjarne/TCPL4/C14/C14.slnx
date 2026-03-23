@@ -4,4 +4,5 @@
     <Platform Name="x86" />
   </Configurations>
   <Project Path="C140100_composition_problems/C140100_composition_problems.vcxproj" Id="30e52001-9a23-4ca4-849f-ca50325b1b82" />
+  <Project Path="C140200_namespaces/C140200_namespaces.vcxproj" Id="b366f333-f463-43e8-b916-b9e4728efd7a" />
 </Solution>

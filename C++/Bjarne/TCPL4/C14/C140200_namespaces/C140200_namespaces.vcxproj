@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{30e52001-9a23-4ca4-849f-ca50325b1b82}</ProjectGuid>
-    <RootNamespace>C140100compositionproblems</RootNamespace>
+    <ProjectGuid>{b366f333-f463-43e8-b916-b9e4728efd7a}</ProjectGuid>
+    <RootNamespace>C140200namespaces</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C140100_composition_problems.cpp" />
+    <ClCompile Include="C140200_namespaces.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Graph_lib.h" />
