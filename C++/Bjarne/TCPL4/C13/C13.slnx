@@ -25,4 +25,7 @@
   <Project Path="C130502_catching_exceptions/C130502_catching_exceptions.vcxproj" Id="18896d86-aeae-4c49-b7cb-b332c307b734" />
   <Project Path="C130503_exceptions_and_threads/C130503_exceptions_and_threads.vcxproj" Id="04d8b9b8-4f55-4253-901d-6637bb3c28d2" />
   <Project Path="C130601_a_simple_vector/C130601_a_simple_vector.vcxproj" Id="e5ac0a68-ed3b-4a16-8480-a95a590f199a" />
+  <Project Path="C130602_representing_memory_explicitly/C130602_representing_memory_explicitly.vcxproj" Id="2e1db3fb-6029-4032-a254-4743bfe66561" />
+  <Project Path="C130603_assignment/C130603_assignment.vcxproj" Id="cb7173b2-ac75-4017-9324-3d660913971b" />
+  <Project Path="C130604_changing_size/C130604_changing_size.vcxproj" Id="f9b72470-ab1a-407d-a3ac-54c02646572e" />
 </Solution>
