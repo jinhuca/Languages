@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C140100_composition_problems/C140100_composition_problems.vcxproj" Id="30e52001-9a23-4ca4-849f-ca50325b1b82" />
+</Solution>
