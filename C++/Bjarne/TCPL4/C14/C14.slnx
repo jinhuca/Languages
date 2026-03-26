@@ -5,4 +5,9 @@
   </Configurations>
   <Project Path="C140100_composition_problems/C140100_composition_problems.vcxproj" Id="30e52001-9a23-4ca4-849f-ca50325b1b82" />
   <Project Path="C140200_namespaces/C140200_namespaces.vcxproj" Id="b366f333-f463-43e8-b916-b9e4728efd7a" />
+  <Project Path="C140201_explicit_qualification/C140201_explicit_qualification.vcxproj" Id="5599bc2c-8cc5-4226-b76d-88f100f9267f" />
+  <Project Path="C140202_using_declarations/C140202_using_declarations.vcxproj" Id="804cd817-98ec-4838-a702-56dff68d7153" />
+  <Project Path="C140203_using_directives/C140203_using_directives.vcxproj" Id="b36dc212-9648-4d89-8042-f8ac4e75ce11" />
+  <Project Path="C140204_argument_dependent_lookup/C140204_argument_dependent_lookup.vcxproj" Id="7d919ce0-43cc-40f8-9258-519ebcc6dcce" />
+  <Project Path="C140205_namespaces_are_opn/C140205_namespaces_are_opn.vcxproj" Id="92bc481c-a0b8-4712-a5ba-b28f54a554a4" />
 </Solution>
