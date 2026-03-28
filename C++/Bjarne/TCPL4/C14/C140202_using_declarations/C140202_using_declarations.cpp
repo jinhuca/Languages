@@ -1,20 +1,29 @@
-// C140202_using_declarations.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// C140202_using_declarations.cpp
 #include <iostream>
+#include <string>
+#include <sstream>
+#include <vector>
+
+// split s into its whitespace-separated substrings
+std::vector<std::string> split(const std::string& s) {
+    std::vector<std::string> res;
+    std::istringstream iss(s);
+    for (std::string buf; iss >> buf;)
+        res.push_back(buf);
+    return res;
+}
+
+using std::string;    // use "string" to mean "std::string"
+
+std::vector<string> split2(const string& s) {
+    std::vector<string> res;
+    std::istringstream iss(s);
+    for (string buf; iss >> buf;)
+        res.push_back(buf);
+    return res;
+}
 
 int main()
 {
     std::cout << "Hello World!\n";
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file

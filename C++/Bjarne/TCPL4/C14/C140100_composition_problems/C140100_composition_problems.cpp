@@ -4,5 +4,5 @@
 #include "Text_lib.h"
 
 int main() {
-  std::cout << "Hello World!\n";
+  std::cout << "Just including two headers leads to errors.\n";
 }

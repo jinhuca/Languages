@@ -7,7 +7,7 @@ namespace Text_lib {
   class Line { /* ... */ };
   class Text { /* ... */ };
 
-  std::ofstream* open_file(const char* f) {}
+  std::ofstream* open_file(const char* f);
 
-  Word operator+(const Line& l1, const Line& l2) {}
-} // namespace Text_lib
+  Word operator+(const Line& l1, const Line& l2);
+  } // namespace Text_lib
