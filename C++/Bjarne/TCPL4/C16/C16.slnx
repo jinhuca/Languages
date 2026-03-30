@@ -1,0 +1,12 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C160200_class_basics/C160200_class_basics.vcxproj" />
+  <Project Path="C160201_member_functions/C160201_member_functions.vcxproj" />
+  <Project Path="C160202_default_copying/C160202_default_copying.vcxproj" />
+  <Project Path="C160203_access_control/C160203_access_control.vcxproj" />
+  <Project Path="C160204_class_and_struct/C160204_class_and_struct.vcxproj" />
+  <Project Path="C160205_constructors/C160205_constructors.vcxproj" />
+</Solution>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{92bc481c-a0b8-4712-a5ba-b28f54a554a4}</ProjectGuid>
-    <RootNamespace>C140205namespacesareopn</RootNamespace>
+    <ProjectGuid>{76bf72a3-b0c7-49f1-a8cb-e348a500dd90}</ProjectGuid>
+    <RootNamespace>C140401conveniencevssafety</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C140205_namespaces_are_opn.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="my_header.h" />
+    <ClCompile Include="C140401_convenience_vs_safety.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

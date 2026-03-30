@@ -1,20 +1,53 @@
-// C140204_argument_dependent_lookup.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
+// C140204_argument_dependent_lookup.cpp 
 #include <iostream>
+#include <string>
 
-int main()
-{
-    std::cout << "Hello World!\n";
+namespace Chrono {
+  class Date { };
+  bool operator==(const Date&, const std::string&);
+  std::string format(const Date&);  // make string representation
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+void f(Chrono::Date d, int i) {
+  std::string s = format(d);  // call Chrono::format without qualification
+  std::string t = format(i);  // error: no match for format(int)
+}
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+namespace N {
+  struct S { int i; };
+  void f(S);
+  void g(S);
+  void h(int);
+}
+
+struct Base {
+  void f(N::S);
+};
+
+struct D : Base {
+  void mf(N::S);
+
+  void g(N::S x) {
+    f(x);   // call Base::f without qualification
+    mf(x);  // call D::mf without qualification
+    h(x);   // error: no match for h(N::S)
+  }
+};
+
+namespace N {
+  template<typename T>
+  void f(T, int);
+  class X{};
+}
+
+namespace N2 {
+  N::X x;
+  void f(N::X, unsigned);
+  void g() {
+    f(x, 1);   // call N::f(N::X, int) without qualification
+  }
+}
+
+int main() {
+  
+}

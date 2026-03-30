@@ -10,4 +10,6 @@
   <Project Path="C140203_using_directives/C140203_using_directives.vcxproj" Id="b36dc212-9648-4d89-8042-f8ac4e75ce11" />
   <Project Path="C140204_argument_dependent_lookup/C140204_argument_dependent_lookup.vcxproj" Id="7d919ce0-43cc-40f8-9258-519ebcc6dcce" />
   <Project Path="C140205_namespaces_are_opn/C140205_namespaces_are_opn.vcxproj" Id="92bc481c-a0b8-4712-a5ba-b28f54a554a4" />
+  <Project Path="C140300_modularization_and_interfaces/C140300_modularization_and_interfaces.vcxproj" Id="6cc9fef4-860f-41a4-9329-8ff2c4c60d96" />
+  <Project Path="C140401_convenience_vs_safety/C140401_convenience_vs_safety.vcxproj" Id="76bf72a3-b0c7-49f1-a8cb-e348a500dd90" />
 </Solution>

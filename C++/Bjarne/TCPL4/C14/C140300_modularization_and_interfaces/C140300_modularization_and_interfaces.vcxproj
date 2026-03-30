@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{92bc481c-a0b8-4712-a5ba-b28f54a554a4}</ProjectGuid>
-    <RootNamespace>C140205namespacesareopn</RootNamespace>
+    <ProjectGuid>{6cc9fef4-860f-41a4-9329-8ff2c4c60d96}</ProjectGuid>
+    <RootNamespace>C140300modularizationandinterfaces</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,10 +127,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C140205_namespaces_are_opn.cpp" />
+    <ClCompile Include="C140300_modularization_and_interfaces.cpp" />
+    <ClCompile Include="Parser.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="my_header.h" />
+    <ClInclude Include="Driver.h" />
+    <ClInclude Include="Error.h" />
+    <ClInclude Include="Lexer.h" />
+    <ClInclude Include="Parser.h" />
+    <ClInclude Include="Table.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

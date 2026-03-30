@@ -1,20 +1,30 @@
-// C140203_using_directives.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
+// C140203_using_directives.cpp 
+#include <string>
+#include <sstream>
+#include <vector>
+#include "Text_lib.h"
+#include "Graph_lib.h"
 
-#include <iostream>
+using namespace std;    // make every name from std available without qualification
 
-int main()
-{
-    std::cout << "Hello World!\n";
+// split a string into whitespace-separated substrings
+vector<string> split(const string& s) {
+  vector<string> res;
+  istringstream iss(s);
+  for(string buf; iss >> buf;)   // read whitespace-separated tokens
+    res.push_back(buf);
+  return res;
 }
 
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
+using namespace Graph_lib;   // make every name from Graph_lib available without qualification
+using namespace Text_lib;    // make every name from Text_lib available without qualification
 
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
+int main() {
+  auto res = split("This is a test of using directives");   // call split without qualification
+
+  Glyph g1;   // use Glyph from Graph_lib without qualification
+  vector<Shape*> vs;   // use vector from std without qualification
+
+  Text t1;                            // error: ambiguous
+  File* fp = open("my_shapes.txt");   // error: ambiguous
+}
