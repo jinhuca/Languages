@@ -3,10 +3,20 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="C160200_class_basics/C160200_class_basics.vcxproj" />
-  <Project Path="C160201_member_functions/C160201_member_functions.vcxproj" />
-  <Project Path="C160202_default_copying/C160202_default_copying.vcxproj" />
-  <Project Path="C160203_access_control/C160203_access_control.vcxproj" />
-  <Project Path="C160204_class_and_struct/C160204_class_and_struct.vcxproj" />
-  <Project Path="C160205_constructors/C160205_constructors.vcxproj" />
+  <Project Path="C160200_class_basics/C160200_class_basics.vcxproj" Id="106836cb-89c4-4841-a0b2-ee228a1b54a9" />
+  <Project Path="C160201_member_functions/C160201_member_functions.vcxproj" Id="baab2db8-7d8d-4dad-8673-37735410c818" />
+  <Project Path="C160202_default_copying/C160202_default_copying.vcxproj" Id="37a18799-21a7-48c4-bd4e-356c0e72513e" />
+  <Project Path="C160203_access_control/C160203_access_control.vcxproj" Id="091b8283-cc2b-4907-a804-f0146b7cf60c" />
+  <Project Path="C160204_class_and_struct/C160204_class_and_struct.vcxproj" Id="97008bd2-a38d-428f-aa70-531e81945a67" />
+  <Project Path="C160205_constructors/C160205_constructors.vcxproj" Id="d89de935-5655-41f6-bb32-5a46eaa95a82" />
+  <Project Path="C160206_explicit_constructors/C160206_explicit_constructors.vcxproj" Id="2f8f73dd-8cd9-4e5d-9df7-47c9cf112fe0" />
+  <Project Path="C160207_in_class_initializers/C160207_in_class_initializers.vcxproj" Id="748532d0-87f0-4be8-a743-485a78d509e9" />
+  <Project Path="C160208_in_class_function_definitions/C160208_in_class_function_definitions.vcxproj" Id="e6e35c3b-77be-4e7c-9f50-986fdcede3e1" />
+  <Project Path="C16020901_constant_member_functions/C16020901_constant_member_functions.vcxproj" Id="7fe38bd5-c578-4924-aa65-8db181ed93a0" />
+  <Project Path="C16020902_physical_and_logical_constness/C16020902_physical_and_logical_constness.vcxproj" Id="18e98901-af97-4d8b-9528-57666ab2adbd" />
+  <Project Path="C16020903_mutable/C16020903_mutable.vcxproj" Id="d3e681de-f620-4ffd-b422-b6fc6df60e08" />
+  <Project Path="C16020904_mutability_through_indirection/C16020904_mutability_through_indirection.vcxproj" Id="28b8fd47-4022-4122-afa4-96afaaa1caa5" />
+  <Project Path="C160210_self_reference/C160210_self_reference.vcxproj" Id="f7cc952c-f415-438b-8188-a8ca5366172c" />
+  <Project Path="C160211_member_access/C160211_member_access.vcxproj" Id="c5d63faa-eae7-4488-93dd-a873e31dee25" />
+  <Project Path="C160212_static_members/C160212_static_members.vcxproj" Id="943e2ecd-c74f-4cda-b4f4-bc05d0827795" />
 </Solution>
