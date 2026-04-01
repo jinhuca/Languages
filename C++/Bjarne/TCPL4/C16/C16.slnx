@@ -19,4 +19,6 @@
   <Project Path="C160210_self_reference/C160210_self_reference.vcxproj" Id="f7cc952c-f415-438b-8188-a8ca5366172c" />
   <Project Path="C160211_member_access/C160211_member_access.vcxproj" Id="c5d63faa-eae7-4488-93dd-a873e31dee25" />
   <Project Path="C160212_static_members/C160212_static_members.vcxproj" Id="943e2ecd-c74f-4cda-b4f4-bc05d0827795" />
+  <Project Path="C160213_member_types/C160213_member_types.vcxproj" Id="467473a7-49c3-4402-8a95-6eeb50399f04" />
+  <Project Path="C160300_concrete_classes/C160300_concrete_classes.vcxproj" Id="cb9f8f4a-3462-4dcd-9166-9c8760e36647" />
 </Solution>
