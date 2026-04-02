@@ -1,0 +1,10 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C170100_introduction/C170100_introduction.vcxproj" Id="6e904905-86e4-42f6-b1ec-6461519e981c" />
+  <Project Path="C170200_constructors_and_destructors/C170200_constructors_and_destructors.vcxproj" Id="a801c998-6a09-4be0-a08a-4061a86ed767" />
+  <Project Path="C170201_constructors_and_invariants/C170201_constructors_and_invariants.vcxproj" Id="0ebc6a49-e4ca-42e5-9603-30b4c61df653" />
+  <Project Path="C170202_destructors_and_resources/C170202_destructors_and_resources.vcxproj" Id="a045f818-2f10-43f8-9ecb-52db4fbbc593" />
+</Solution>

@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{b9dd1786-50bc-4aab-8198-c011fffcbe4d}</ProjectGuid>
-    <RootNamespace>C160300concreteclasses</RootNamespace>
+    <ProjectGuid>{a045f818-2f10-43f8-9ecb-52db4fbbc593}</ProjectGuid>
+    <RootNamespace>C170202destructorsandresources</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,11 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C160300_concrete_classes.cpp" />
-    <ClCompile Include="Date.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Date.h" />
+    <ClCompile Include="C170202_destructors_and_resources.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
