@@ -1,10 +1,8 @@
-// C170501_copy.cpp 
+// C170502_move.cpp 
 #include <iostream>
 #include <array>
-#include <memory>
-#include <exception>
 
-namespace matrix_copy {
+namespace matrix_move {
   using std::array;
 
   template<typename T>
@@ -23,6 +21,8 @@ namespace matrix_copy {
 
     ~Matrix() { delete[] elem; }
     // ...
+
+    Matrix operator+(const Matrix& b);
   };
 
   template<typename T>
@@ -41,8 +41,35 @@ namespace matrix_copy {
     copy(m.elem, m.elem + m.size(), elem);                      // copy elements
     return *this;
   }
+
+  template<typename T>
+  Matrix<T>::Matrix(Matrix&& a)                                 // move constructor
+    : dim{a.dim}, elem{a.elem}                                  // grab a's representation
+  {
+    a.dim = {0, 0};                                             // clear a's representation
+    a.elem = nullptr;
+  }
+
+  template<typename T>
+  Matrix<T>& Matrix<T>::operator=(Matrix&& a)                   // move assignment
+  { 
+    swap(dim, a.dim);                                           // swap representation
+    swap(elem, a.elem);
+    return *this;
+  }
+
+  template<typename T>
+  Matrix<T> Matrix<T>::operator+(const Matrix<T>& b) {
+    if(dim[0] != b.dim[0] || dim[1] != b.dim[1])
+      throw std::runtime_error("unequal Matrix sizes in +");
+    Matrix res{b.dim[0], b.dim[1]};
+    const auto n = b.size();
+    for(int i = 0; i != n; ++i)
+      res.elem[i] = elem[i] + b.elem[i];
+    return res;
+  }
 }
 
-int main() {
-  
+int main()
+{
 }

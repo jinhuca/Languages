@@ -24,4 +24,5 @@
   <Project Path="C17050103_meaning_of_copy/C17050103_meaning_of_copy.vcxproj" Id="aa74387f-8e73-4d49-b25f-39c79a70393f" />
   <Project Path="C17050104_slicing/C17050104_slicing.vcxproj" Id="260c2022-c63a-4d17-a746-8eb18552c18d" />
   <Project Path="C170501_copy/C170501_copy.vcxproj" Id="a53faeae-0b95-43d4-93f2-1c735b08df33" />
+  <Project Path="C170502_move/C170502_move.vcxproj" Id="c7f5aa00-9d48-464d-86ae-bac78a6911dc" />
 </Solution>
