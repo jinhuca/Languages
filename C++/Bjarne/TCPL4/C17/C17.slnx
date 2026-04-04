@@ -7,4 +7,13 @@
   <Project Path="C170200_constructors_and_destructors/C170200_constructors_and_destructors.vcxproj" Id="a801c998-6a09-4be0-a08a-4061a86ed767" />
   <Project Path="C170201_constructors_and_invariants/C170201_constructors_and_invariants.vcxproj" Id="0ebc6a49-e4ca-42e5-9603-30b4c61df653" />
   <Project Path="C170202_destructors_and_resources/C170202_destructors_and_resources.vcxproj" Id="a045f818-2f10-43f8-9ecb-52db4fbbc593" />
+  <Project Path="C170203_base_and_member_destructors/C170203_base_and_member_destructors.vcxproj" Id="10fe366a-c4fd-4053-9633-ceed35cf482b" />
+  <Project Path="C170204_calling_constructors_and_destructors/C170204_calling_constructors_and_destructors.vcxproj" Id="34b1fff0-c0d7-4038-9651-3c4f17593ce7" />
+  <Project Path="C170205_virtual_destructors/C170205_virtual_destructors.vcxproj" Id="79f827ad-c131-4ae6-a280-9c890b0bf5d6" />
+  <Project Path="C170301_initialization_without_constructors/C170301_initialization_without_constructors.vcxproj" Id="01686655-7781-4453-83a4-873258bcf5a7" />
+  <Project Path="C170302_initialization_with_constructors/C170302_initialization_with_constructors.vcxproj" Id="2cbb7e61-7a51-42db-a60b-b4681d0d835f" />
+  <Project Path="C170303_default_constructors/C170303_default_constructors.vcxproj" Id="41929e81-cc6c-4d5c-8e69-7c6958230eba" />
+  <Project Path="C170304_initializer_list_constructors/C170304_initializer_list_constructors.vcxproj" Id="62c0cccc-ee98-4de3-a474-cbad9d4bdc2c" />
+  <Project Path="C170401_member_initialization/C170401_member_initialization.vcxproj" Id="b192c754-aca0-4e53-918c-fbfc7cd67856" />
+  <Project Path="C170402_base_initializers/C170402_base_initializers.vcxproj" Id="0a93342c-41a7-4d35-bf4b-69b9ea5fe9ea" />
 </Solution>
