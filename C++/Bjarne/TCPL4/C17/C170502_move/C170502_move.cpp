@@ -21,9 +21,18 @@ namespace matrix_move {
 
     ~Matrix() { delete[] elem; }
     // ...
-
-    Matrix operator+(const Matrix& b);
   };
+
+  template<typename T>
+  Matrix<T> operator+(const Matrix<T>& a, const Matrix<T>& b) {
+    if(a.dim[0] != b.dim[0] || a.dim[1] != b.dim[1])
+      throw std::runtime_error("unequal Matrix sizes in +");
+    Matrix res{a.dim[0], a.dim[1]};
+    const auto n = a.size();
+    for(int i = 0; i != n; ++n)
+      res.elem[i] = a.elem[i] + b.elem[i];
+    return res;
+  }
 
   template<typename T>
   Matrix<T>::Matrix(const Matrix& m)                            // copy constructor
@@ -56,17 +65,6 @@ namespace matrix_move {
     swap(dim, a.dim);                                           // swap representation
     swap(elem, a.elem);
     return *this;
-  }
-
-  template<typename T>
-  Matrix<T> Matrix<T>::operator+(const Matrix<T>& b) {
-    if(dim[0] != b.dim[0] || dim[1] != b.dim[1])
-      throw std::runtime_error("unequal Matrix sizes in +");
-    Matrix res{b.dim[0], b.dim[1]};
-    const auto n = b.size();
-    for(int i = 0; i != n; ++i)
-      res.elem[i] = elem[i] + b.elem[i];
-    return res;
   }
 }
 

@@ -25,4 +25,8 @@
   <Project Path="C17050104_slicing/C17050104_slicing.vcxproj" Id="260c2022-c63a-4d17-a746-8eb18552c18d" />
   <Project Path="C170501_copy/C170501_copy.vcxproj" Id="a53faeae-0b95-43d4-93f2-1c735b08df33" />
   <Project Path="C170502_move/C170502_move.vcxproj" Id="c7f5aa00-9d48-464d-86ae-bac78a6911dc" />
+  <Project Path="C170601_explicit_defaults/C170601_explicit_defaults.vcxproj" Id="b13b982b-c5eb-49be-883d-c16b2fa16c9b" />
+  <Project Path="C170602_default_operations/C170602_default_operations.vcxproj" Id="f5f8c1d6-c3fd-4ccd-9d12-e34d54b789b5" />
+  <Project Path="C170603_using_default_operations/C170603_using_default_operations.vcxproj" Id="5ec99317-df8c-4306-aa9c-8695dcf6b70f" />
+  <Project Path="C170604_deleted_functions/C170604_deleted_functions.vcxproj" Id="a0115802-42d2-4d6e-9745-3a2f281d1b94" />
 </Solution>
