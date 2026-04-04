@@ -16,4 +16,12 @@
   <Project Path="C170304_initializer_list_constructors/C170304_initializer_list_constructors.vcxproj" Id="62c0cccc-ee98-4de3-a474-cbad9d4bdc2c" />
   <Project Path="C170401_member_initialization/C170401_member_initialization.vcxproj" Id="b192c754-aca0-4e53-918c-fbfc7cd67856" />
   <Project Path="C170402_base_initializers/C170402_base_initializers.vcxproj" Id="0a93342c-41a7-4d35-bf4b-69b9ea5fe9ea" />
+  <Project Path="C170403_delegating_constructors/C170403_delegating_constructors.vcxproj" Id="ee314a00-6c96-426f-971f-b11fa623c945" />
+  <Project Path="C170404_in_class_initializers/C170404_in_class_initializers.vcxproj" Id="f34e9ff5-336d-4ac8-8354-e10ba34a0b34" />
+  <Project Path="C170405_static_member_initialization/C170405_static_member_initialization.vcxproj" Id="c876e08e-9e20-414d-b4e1-e7574492b861" />
+  <Project Path="C17050101_beware_of_default_constructors/C17050101_beware_of_default_constructors.vcxproj" Id="7fba238c-cab8-4a25-a343-8659e9047562" />
+  <Project Path="C17050102_copy_bases/C17050102_copy_bases.vcxproj" Id="729888fa-7c32-4a51-9736-043b20b552e6" />
+  <Project Path="C17050103_meaning_of_copy/C17050103_meaning_of_copy.vcxproj" Id="aa74387f-8e73-4d49-b25f-39c79a70393f" />
+  <Project Path="C17050104_slicing/C17050104_slicing.vcxproj" Id="260c2022-c63a-4d17-a746-8eb18552c18d" />
+  <Project Path="C170501_copy/C170501_copy.vcxproj" Id="a53faeae-0b95-43d4-93f2-1c735b08df33" />
 </Solution>
