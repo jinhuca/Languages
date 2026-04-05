@@ -6,4 +6,11 @@
   <Project Path="C190201_subscripting/C190201_subscripting.vcxproj" />
   <Project Path="C190202_function_call/C190202_function_call.vcxproj" />
   <Project Path="C190203_dereferencing/C190203_dereferencing.vcxproj" />
+  <Project Path="C190204_increment_decrement/C190204_increment_decrement.vcxproj" />
+  <Project Path="C190205_allocation_deallocation/C190205_allocation_deallocation.vcxproj" />
+  <Project Path="C190206_user_defined_literals/C190206_user_defined_literals.vcxproj" />
+  <Project Path="C190300_string_class/C190300_string_class.vcxproj" />
+  <Project Path="C190400_friend_introduction/C190400_friend_introduction.vcxproj" />
+  <Project Path="C190401_finding_friends/C190401_finding_friends.vcxproj" />
+  <Project Path="C190402_friends_and_members/C190402_friends_and_members.vcxproj" />
 </Solution>
