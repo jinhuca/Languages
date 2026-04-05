@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{c34a1863-1cb4-4583-8398-7df09180c0ab}</ProjectGuid>
-    <RootNamespace>C180201binaryunaryoperators</RootNamespace>
+    <ProjectGuid>{03a987db-e461-47c5-abf0-cd30a27d6c0c}</ProjectGuid>
+    <RootNamespace>C180205operatorsinnamespaces</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C180201_binary_unary_operators.cpp" />
+    <ClCompile Include="C180205_operators_in_namespaces.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

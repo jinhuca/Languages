@@ -1,0 +1,14 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C180100_introduction/C180100_introduction.vcxproj" />
+  <Project Path="C180200_operator_functions/C180200_operator_functions.vcxproj" />
+  <Project Path="C180201_binary_unary_operators/C180201_binary_unary_operators.vcxproj" />
+  <Project Path="C180202_predefined_meanings_for_operators/C180202_predefined_meanings_for_operators.vcxproj" />
+  <Project Path="C180203_operators_and_user_defined_types/C180203_operators_and_user_defined_types.vcxproj" />
+  <Project Path="C180204_passing_objects/C180204_passing_objects.vcxproj" />
+  <Project Path="C180205_operators_in_namespaces/C180205_operators_in_namespaces.vcxproj" />
+  <Project Path="C180300_complex_number_type/C180300_complex_number_type.vcxproj" />
+</Solution>
