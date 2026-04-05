@@ -5,4 +5,5 @@
   </Configurations>
   <Project Path="C190201_subscripting/C190201_subscripting.vcxproj" />
   <Project Path="C190202_function_call/C190202_function_call.vcxproj" />
+  <Project Path="C190203_dereferencing/C190203_dereferencing.vcxproj" />
 </Solution>

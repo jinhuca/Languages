@@ -1,9 +1,14 @@
 // C190202_function_call.cpp 
 #include <iostream>
 #include <complex>
+#include <vector>
+#include <list>
+#include<algorithm>
 
 using std::pair;
 using std::complex;
+using std::vector;
+using std::list;
 
 struct Action {
   int operator()(int);
@@ -23,9 +28,9 @@ double Action::operator()(double d) {
   return d;
 }
 
-void calls() {
+void call_operators() {
   int x = act(2);
-  auto y = act(3, 4);
+  pair<int,int> y = act(3, 4);
   double z = act(2.3);
 }
 
@@ -37,6 +42,16 @@ public:
 
   void operator()(complex<double>& c) const { c += val; }
 };
+
+void h1(vector<complex<double>>& vec, list<complex<double>>& lst, complex<double> z) {
+  for_each(vec.begin(), vec.end(), Add(2, 3));
+  for_each(lst.begin(), lst.end(), Add(z));
+}
+
+void h2(vector<complex<double>>& vec, list<complex<double>>& lst, complex<double> z) {
+  for_each(vec.begin(), vec.end(), [](complex<double>& a) {a += {2, 3}; });
+  for_each(lst.begin(), lst.end(), [z](complex<double>& a) {a += z; });
+}
 
 int main() {
   
