@@ -11,4 +11,5 @@
   <Project Path="C180204_passing_objects/C180204_passing_objects.vcxproj" />
   <Project Path="C180205_operators_in_namespaces/C180205_operators_in_namespaces.vcxproj" />
   <Project Path="C180300_complex_number_type/C180300_complex_number_type.vcxproj" />
+  <Project Path="C180400_type_conversion/C180400_type_conversion.vcxproj" />
 </Solution>

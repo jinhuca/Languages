@@ -1,7 +1,8 @@
 // C180300_complex_number_type.cpp 
 #include <iostream>
 #include "complex.h"
-using C18::complex;
+using namespace C18;
+//using C18::complex;
 
 void f(complex x, complex y) {
   auto r1 = x + y;
@@ -22,6 +23,13 @@ void default_copy() {
   z = x;            // default copy assignment
 }
 
+void complex_literals() {
+  //using namespace C18;
+  auto x{2.3_i};
+  complex z1{12 + 23.1_i};
+
+}
+
 int main() {
-  
+  complex_literals();
 }
