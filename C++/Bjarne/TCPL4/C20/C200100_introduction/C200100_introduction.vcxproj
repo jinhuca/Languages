@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{94a6cafa-d223-4289-8996-ce3f7bfb61b3}</ProjectGuid>
-    <RootNamespace>C200201memberfunctions</RootNamespace>
+    <ProjectGuid>{09f9625a-5d5f-484d-a4db-5a9de011cc23}</ProjectGuid>
+    <RootNamespace>C200100introduction</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C200201_member_functions.cpp" />
+    <ClCompile Include="C200100_introduction.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
