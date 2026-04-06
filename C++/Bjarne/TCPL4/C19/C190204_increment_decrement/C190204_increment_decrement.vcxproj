@@ -129,6 +129,9 @@
   <ItemGroup>
     <ClCompile Include="C190204_increment_decrement.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Ptr.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

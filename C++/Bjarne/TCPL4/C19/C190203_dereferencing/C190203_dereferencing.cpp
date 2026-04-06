@@ -12,21 +12,13 @@ private:
   X data;
   // ...
 public:
-  Ptr(X);
-  X* operator->();
+  Ptr(X x) : data{x} {}
+  X* operator->() { return &data; }
 };
-
-Ptr::Ptr(X x) : data{x} {
-}
-
-X* Ptr::operator->() {
-  return &data;
-}
 
 void f(Ptr p) {
   std::cout << p->a << " & " << p->b << '\n';
 }
-
 
 template<typename T>
 void write_to_disk(T* p, const string& id) {
