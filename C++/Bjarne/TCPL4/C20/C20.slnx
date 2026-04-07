@@ -7,4 +7,8 @@
   <Project Path="C200200_derived_classes/C200200_derived_classes.vcxproj" Id="9b0b644e-3675-4deb-baee-8ca834d340c8" />
   <Project Path="C200201_member_functions/C200201_member_functions.vcxproj" Id="94a6cafa-d223-4289-8996-ce3f7bfb61b3" />
   <Project Path="C200300_class_hierarchies/C200300_class_hierarchies.vcxproj" Id="ec6ae2f1-171a-46ad-927d-ec0904d530e1" />
+  <Project Path="C200301_type_fields/C200301_type_fields.vcxproj" Id="36e2162a-1274-4cef-986e-c8fa3a04c422" />
+  <Project Path="C200302_virtual_functions/C200302_virtual_functions.vcxproj" Id="6bb43fcc-bb74-4046-af5e-ba5bcf1ecf4f" />
+  <Project Path="C200303_explicit_qualification/C200303_explicit_qualification.vcxproj" Id="37db085e-cc52-4bb4-988b-a9adc4a0cb0f" />
+  <Project Path="C200304_override_control/C200304_override_control.vcxproj" Id="aa8aa578-f4fe-4b04-83ab-15aa48ca508f" />
 </Solution>
