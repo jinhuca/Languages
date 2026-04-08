@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C210201_implementation_inheritance/C210201_implementation_inheritance.vcxproj" />
+  <Project Path="C210202_interface_inheritance/C210202_interface_inheritance.vcxproj" />
+</Solution>
