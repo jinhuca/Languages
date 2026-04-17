@@ -3,6 +3,6 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="C210201_implementation_inheritance/C210201_implementation_inheritance.vcxproj" />
-  <Project Path="C210202_interface_inheritance/C210202_interface_inheritance.vcxproj" />
+  <Project Path="C210201_implementation_inheritance/C210201_implementation_inheritance.vcxproj" Id="20b6a373-1124-4eaa-be65-608a8639b62d" />
+  <Project Path="C210202_interface_inheritance/C210202_interface_inheritance.vcxproj" Id="14b2b7d6-a456-4036-829e-0d00244ce79d" />
 </Solution>

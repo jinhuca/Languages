@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>18.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{efd0135a-710d-4719-b59d-4b6f7bd96856}</ProjectGuid>
-    <RootNamespace>C230401DataMembers</RootNamespace>
+    <ProjectGuid>{5501aaf5-59f1-4a42-ac08-df12a6df7759}</ProjectGuid>
+    <RootNamespace>C230200simplestringtemplate</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -127,7 +127,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="C230401_DataMembers.cpp" />
+    <ClCompile Include="C230200_simple_string_template.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

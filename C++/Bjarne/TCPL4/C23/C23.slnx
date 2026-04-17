@@ -1,0 +1,11 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C230200_simple_string_template/C230200_simple_string_template.vcxproj" Id="5501aaf5-59f1-4a42-ac08-df12a6df7759" />
+  <Project Path="C230201_defining_a_template/C230201_defining_a_template.vcxproj" Id="d6c3e246-940a-4c1a-89b4-5e909a3ad79f" />
+  <Project Path="C230202_template_instantiation/C230202_template_instantiation.vcxproj" Id="2fb2f175-09a3-46c1-89f3-7675adaddcf9" />
+  <Project Path="C230301_type_equivalence/C230301_type_equivalence.vcxproj" Id="74d39887-d168-469f-a296-5667368e81cd" />
+  <Project Path="C230302_error_detection/C230302_error_detection.vcxproj" Id="4fc5fd65-1bd8-473f-8656-fbcf14909fc6" />
+</Solution>
