@@ -4,13 +4,11 @@ using static System.Console;
 
 namespace C0202.FirstRx;
 
-public class RxStockMonitor : IDisposable
-{
+public class RxStockMonitor : IDisposable {
   private readonly IDisposable _subscription;
   public IObservable<DrasticChange> DrasticChanges { get; }
 
-  internal RxStockMonitor(StockTicker? ticker)
-  {
+  internal RxStockMonitor(StockTicker? ticker) {
     const decimal maxChangeRatio = 0.1m;
 
     // creating an observable from the StockTick event,
@@ -21,14 +19,13 @@ public class RxStockMonitor : IDisposable
       .Select(tickEvent => tickEvent.EventArgs)
       .Synchronize();
 
-    IObservable < DrasticChange > drasticChanges_ =
+    IObservable<DrasticChange> drasticChanges_ =
       from tick in ticks_
       group tick by tick.Symbol into company
       from tickPair in company.Buffer(2, 1)
       let changeRatio = Math.Abs((tickPair[1].Price - tickPair[0].Price) / tickPair[0].Price)
       where changeRatio > maxChangeRatio
-      select new DrasticChange
-      {
+      select new DrasticChange {
         Symbol = company.Key,
         ChangeRatio = changeRatio,
         OldPrice = tickPair[0].Price,
