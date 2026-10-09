@@ -3,10 +3,8 @@ using System.Reactive.Disposables;
 
 namespace P093;
 
-public class ObservableConnection(IChatConnection chatConnection) : ObservableBase<string>
-{
-  protected override IDisposable SubscribeCore(IObserver<string> observer)
-  {
+public class ObservableConnection(IChatConnection chatConnection) : ObservableBase<string> {
+  protected override IDisposable SubscribeCore(IObserver<string> observer) {
     Action<string> received = observer.OnNext;
     Action closed = observer.OnCompleted;
     Action<Exception> error = observer.OnError;
@@ -22,8 +20,7 @@ public class ObservableConnection(IChatConnection chatConnection) : ObservableBa
 
     observer.OnNext("Bye");
 
-    return Disposable.Create(() =>
-    {
+    return Disposable.Create(() => {
       chatConnection.Received -= received;
       chatConnection.Closed -= closed;
       chatConnection.Error -= error;

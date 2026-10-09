@@ -2,10 +2,8 @@
 
 namespace P093;
 
-internal class Program
-{
-  static void Main(string[] args)
-  {
+internal class Program {
+  static void Main(string[] args) {
     var chatClient_ = new ChatClient();
     var connection_ = chatClient_.Connect("guest", "guest");
 
@@ -14,7 +12,7 @@ internal class Program
       .Connect("guest", "guest")
       .ToObservable()
       .SubscribeConsole();
-    
+
     Console.ReadLine();
   }
 }

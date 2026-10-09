@@ -14,21 +14,21 @@ sealed class StockMonitorViaEvent : IDisposable {
   }
 
   public void Dispose() {
-    if(_ticker != null) _ticker.StockTick -= OnStockTick;
+    if (_ticker != null) _ticker.StockTick -= OnStockTick;
     _stockInfos.Clear();
   }
 
   private void OnStockTick(object sender, StockTick stockTick) {
     const decimal maxChangeRatio = 0.1m;
     var quoteSymbol = stockTick.Symbol;
-    lock(_stockTickLocker) {
+    lock (_stockTickLocker) {
       var stockInfoExists = _stockInfos.TryGetValue(
                                             quoteSymbol, out var stockInfo);
-      if(stockInfoExists) {
-        if(stockInfo != null) {
+      if (stockInfoExists) {
+        if (stockInfo != null) {
           var priceDiff = stockTick.Price - stockInfo.PrevPrice;
-          var changeRatio = Math.Abs(priceDiff/stockInfo.PrevPrice);
-          if(changeRatio > maxChangeRatio) {
+          var changeRatio = Math.Abs(priceDiff / stockInfo.PrevPrice);
+          if (changeRatio > maxChangeRatio) {
             WriteLine($"Stock: {quoteSymbol} has changed with " +
                       $"{changeRatio} ratio, Old Price: " +
                       $"{stockInfo.PrevPrice:#.##} New Price: " +
