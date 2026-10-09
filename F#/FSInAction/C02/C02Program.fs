@@ -1,12 +1,12 @@
-﻿let name = "isaac"
-let time = System.DateTime.UtcNow
-printfn $"Hello from F#! My name is {name}, the time is {time}"
+﻿let getEvenNumbers numbers = 
+  Seq.filter(fun x -> x % 2 = 0) numbers
 
-let version = 8
-printfn $"F# {version} is cool"
+printfn "Even numbers: %A" (getEvenNumbers [1; 2; 3; 4; 5; 6])
 
-let greetPerson name age =
-  $"Hello, {name}. You are {age} years old."
+let squareNumbers numbers = 
+  Seq.map(fun x -> x * x) numbers
 
-let result = greetPerson "Fred" 21
-printfn "%s" result
+let getEvenNumbersAndSquare numbers = 
+  numbers |> getEvenNumbers |> squareNumbers
+
+printfn "Squared even numbers: %A" (getEvenNumbersAndSquare [1; 2; 3; 4; 5; 6])
