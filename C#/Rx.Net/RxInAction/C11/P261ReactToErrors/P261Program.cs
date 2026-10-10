@@ -4,27 +4,22 @@ using Helpers;
 
 namespace P261ReactToErrors;
 
-internal class P261Program
-{
-  static void Main(string[] args)
-  {
+internal class P261Program {
+  static void Main(string[] args) {
     //ReactOnErrors();
     //CatchErrors();
     CatchAllExceptions();
   }
 
-  static void ReactOnErrors()
-  {
+  static void ReactOnErrors() {
     IObservable<WeatherSimulation> weatherSimulationResults =
       Observable.Throw<WeatherSimulation>(new OutOfMemoryException());
 
     weatherSimulationResults
       .Subscribe(
         _ => { },
-        e =>
-        {
-          if(e is OutOfMemoryException)
-          {
+        e => {
+          if (e is OutOfMemoryException) {
             //a last attampt to free some memory
             GCSettings.LargeObjectHeapCompactionMode =
               GCLargeObjectHeapCompactionMode.CompactOnce;
@@ -36,13 +31,11 @@ internal class P261Program
         });
   }
 
-  static void CatchErrors()
-  {
+  static void CatchErrors() {
     IObservable<WeatherSimulation> weatherSimulationResults =
       Observable.Throw<WeatherSimulation>(new OutOfMemoryException());
     weatherSimulationResults
-      .Catch((OutOfMemoryException ex) =>
-      {
+      .Catch((OutOfMemoryException ex) => {
         Console.WriteLine("handling OOM exception");
         return Observable.Empty<WeatherSimulation>();
       })
@@ -50,8 +43,7 @@ internal class P261Program
     Console.ReadLine();
   }
 
-  static void CatchAllExceptions()
-  {
+  static void CatchAllExceptions() {
     IObservable<WeatherSimulation> weatherSimulationResults =
       Observable.Throw<WeatherSimulation>(new OutOfMemoryException());
     weatherSimulationResults
