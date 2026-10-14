@@ -9,7 +9,6 @@ import std;
 //  return (... + args);
 //}
 
-int main()
-{
-    std::cout << "Hello World!\n";
+int main() {
+  std::cout << "Hello World!\n";
 }

@@ -48,7 +48,7 @@ console.log(y)                          //
 let primes = [2, 3, 5, 7]               // Array is enclosed in square brackets [].
 console.log(primes[0])                  // Returns 2.
 console.log(primes.length)              // Returns 4.
-z = primes[primes.length - 1]           // Get the last element of the array.
+let z = primes.at(-1)                    // Get the last element of the array.
 console.log(z)                          // Returns 7.
 primes[4] = 9                           // Add a new element to the array.
 primes[4] = 11                          // Change the value of an existing element.
