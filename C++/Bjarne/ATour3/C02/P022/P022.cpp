@@ -1,8 +1,7 @@
 import std;
 using namespace std;
 
-struct Vector
-{
+struct Vector {
   double* elem;                       // pointer to elements
   int sz;                             // number of elements
 };
@@ -18,29 +17,25 @@ double read_and_sum(int s)            // read s integers from cin and return the
   Vector v;
   vector_init(v, s);               // allocate s elements for v
 
-  for (int i = 0; i != s; ++i)
-  {
+  for(int i = 0; i != s; ++i) {
     std::cin >> v.elem[i];            // read into elements
   }
 
   double sum = 0;
-  for (int i = 0; i != s; ++i)
-  {
+  for(int i = 0; i != s; ++i) {
     sum += v.elem[i];                 // compute the sum of the elements
   }
 
   return sum;
 }
 
-void f(Vector v, Vector& rv, Vector* pv)
-{
+void f(Vector v, Vector& rv, Vector* pv) {
   int i1 = v.sz;                      // access through name
   int i2 = rv.sz;                     // access through reference
   int i3 = pv->sz;                    // access through pointer
 }
 
-int main()
-{
+int main() {
   auto result = read_and_sum(5);
   cout << result << '\n';
 }

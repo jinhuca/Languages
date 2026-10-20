@@ -1,24 +1,21 @@
 import std;
 
-struct Node
-{
+struct Node {
   int x;
   int y;
 };
 
-struct Entry
-{
+struct Entry {
   std::string name;
-  std::variant<Node *, int> v;
+  std::variant<Node*, int> v;
 };
 
-void f(Entry *pe)
-{
+void f(Entry* pe) {
   if(std::holds_alternative<int>(pe->v))
     std::cout << get<int>(pe->v);
 }
 
-int main()
-{
-  std::cout << "Hello World!\n";
+int main() {
+  Entry e {"test", 42};
+  f(&e);
 }
