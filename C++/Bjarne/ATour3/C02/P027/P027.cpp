@@ -2,36 +2,30 @@ import std;
 
 enum class Type { ptr, num };       // a Type can hold values ptr and num
 
-struct Node
-{
-};
+struct Node {};
 
-struct Entry
-{
+struct Entry {
   std::string name;
   Type t;
   Node* p;
   int i;
 };
 
-void f(Entry* pe)
-{
-  if (pe->t == Type::num)
+void f(Entry* pe) {
+  if(pe->t == Type::num)
     std::cout << pe->i;
 }
 
-union Value
-{
+union Value {
   Node* p;
   int i;
 };
 
-void g(Entry* pe)
-{
-  if (pe->t == Type::num)
+void g(Entry* pe) {
+  if(pe->t == Type::num)
     std::cout << pe->name;
 }
 
-int main()
-{
+int main() {
+  g(new Entry {"test", Type::num, nullptr, 42});
 }
