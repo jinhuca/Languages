@@ -3,10 +3,10 @@ import std;
 
 struct Elem {};
 
-// type: double(const vector<double>&, int) 
+// type of get: double(const vector<double>&, int) 
 double get(const std::vector<double>& vec, int index);
 
-// type: char& String::(int)
+// type of operator[]: char& String::(int)
 char& String::operator[](int index);
 
 

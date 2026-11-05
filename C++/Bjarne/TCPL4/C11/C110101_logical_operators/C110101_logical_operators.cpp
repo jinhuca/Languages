@@ -28,7 +28,7 @@ int count_chars(char* p) {
   }
   return count;
 }
-
+ 
 void short_circuit_evaluation() {
   char word[] = "hello world!";
   std::cout << count_chars(word) << '\n';

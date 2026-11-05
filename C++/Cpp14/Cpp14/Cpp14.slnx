@@ -1,0 +1,8 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="C0101_deduction/C0101_deduction.vcxproj" />
+  <Project Path="C0102_typeDeduction/C0102_typeDeduction.vcxproj" />
+</Solution>
