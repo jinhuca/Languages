@@ -24,7 +24,7 @@ private:
 template <typename T>
 Vector<T>::Vector(int s) {
   if(s < 0) {
-    throw std::length_error { "Vector constructor: negative size" };
+    throw std::length_error {"Vector constructor: negative size"};
   }
   elem = new T[s];
   sz = s;
@@ -33,7 +33,7 @@ Vector<T>::Vector(int s) {
 
 template <typename T>
 Vector<T>::Vector(const Vector& a)
-  : elem { new T[a.sz] }, sz { a.sz } {
+  : elem {new T[a.sz]}, sz {a.sz} {
   for(int i = 0; i != sz; ++i) {
     elem[i] = a.elem[i];
   }
@@ -52,13 +52,13 @@ Vector<T>& Vector<T>::operator=(Vector& a) {
 }
 
 template <typename T>
-Vector<T>::Vector(Vector&& a) noexcept : elem { a.elem }, sz { a.sz } {
+Vector<T>::Vector(Vector&& a) noexcept : elem {a.elem}, sz {a.sz} {
   a.elem = nullptr;
   a.sz = 0;
 }
 
 template <typename T>
-Vector<T>& Vector<T>::operator=(Vector&& a) noexcept : elem { a.elem }, sz { a.sz } {
+Vector<T>& Vector<T>::operator=(Vector&& a) noexcept : elem {a.elem}, sz {a.sz} {
   a.elem = nullptr;
   a.sz = 0;
   return *this;
@@ -68,7 +68,7 @@ Vector<T>& Vector<T>::operator=(Vector&& a) noexcept : elem { a.elem }, sz { a.s
 template <typename T>
 T& Vector<T>::operator[](int i) {
   if(i < 0 || i >= size()) {
-    throw std::out_of_range { "Vector::operator[] access out of range." };
+    throw std::out_of_range {"Vector::operator[] access out of range."};
   }
   return elem[i];
 }
@@ -76,7 +76,7 @@ T& Vector<T>::operator[](int i) {
 template <typename T>
 const T& Vector<T>::operator[](int i) const {
   if(i < 0 || size() <= i) {
-    throw std::out_of_range { "Vector::operator[] access out of range." };
+    throw std::out_of_range {"Vector::operator[] access out of range."};
   }
   return elem[i];
 }

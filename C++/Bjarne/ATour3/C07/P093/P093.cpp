@@ -20,8 +20,8 @@ void user(const std::vector<int>& vi, const std::list<double>& ld, const std::ve
 }
 
 int main() {
-  std::vector<int> vi { 1, 2, 3, 4, 5, 6 };
-  std::list<double> ld { 1.2, 2.3, 3.4, 4.5 };
-  std::vector<std::complex<double>> vc { { 1.5, 2.1 }, { 5.6, 7.1 }, { 9.1, 12.1 } };
+  std::vector<int> vi {1, 2, 3, 4, 5, 6};
+  std::list<double> ld {1.2, 2.3, 3.4, 4.5};
+  std::vector<std::complex<double>> vc {{1.5, 2.1}, {5.6, 7.1}, {9.1, 12.1}};
   user(vi, ld, vc);
 }

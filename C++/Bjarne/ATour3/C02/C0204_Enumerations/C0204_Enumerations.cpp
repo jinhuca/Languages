@@ -1,12 +1,11 @@
+// C0204_Enumerations.cpp: Enumerations example
 import std;
 
 enum class Color { red, blue, green };
 enum class Traffic_light { green, yellow, red };
 
-Traffic_light& operator++(Traffic_light& t)       // prefix increment: ++
-{
+Traffic_light& operator++(Traffic_light& t) {      // prefix increment: ++
   using enum Traffic_light;
-
   switch(t) {
     case green:
       return t = yellow;
